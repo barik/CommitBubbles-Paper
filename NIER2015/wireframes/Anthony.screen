@@ -1,35 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:Arrow" id="6" x="416" y="120" width="8" height="201" measuredWidth="8" measuredHeight="201" direction="bottom"/>
+  <widgets xsi:type="model:Arrow" id="99" x="652" y="848" width="8" height="281" measuredWidth="8" measuredHeight="281" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="96" x="90" y="897" width="241" height="60" measuredWidth="241" measuredHeight="60" background="#eaf2fa" border="false" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="50" x="223" y="411" width="8" height="281" measuredWidth="8" measuredHeight="281" direction="bottom"/>
+  <widgets xsi:type="model:Arrow" id="72" x="1068" y="452" width="8" height="281" measuredWidth="8" measuredHeight="281" lineStyle="dashed" direction="bottom"/>
+  <widgets xsi:type="model:Arrow" id="6" x="423" y="120" width="8" height="201" measuredWidth="8" measuredHeight="201" direction="bottom"/>
   <widgets xsi:type="model:Shape" id="1" x="312" y="136" height="27" text="\[Extract method\] isParentOf from shou..." measuredWidth="230" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Shape" id="10" x="312" y="178" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="12" x="312" y="224" width="230" height="27" text="Adds System.out.println(fileName) to s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="12" x="312" y="221" width="230" height="27" text="Adds System.out.println(fileName) to s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Shape" id="13" x="312" y="264" width="230" height="27" text="Adds System.out.println(folderName) t..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Arrow" id="19" x="792" y="120" width="8" height="281" measuredWidth="8" measuredHeight="281" direction="bottom"/>
+  <widgets xsi:type="model:Arrow" id="19" x="799" y="120" width="8" height="281" measuredWidth="8" measuredHeight="281" direction="bottom"/>
   <widgets xsi:type="model:Shape" id="20" x="688" y="136" height="27" text="\[Extract method\] isParentOf from shou..." measuredWidth="230" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="21" x="688" y="178" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="21" x="688" y="177" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="22" x="688" y="224" width="230" height="27" text="Adds System.out.println(fileName) to s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="22" x="688" y="219" width="230" height="27" text="Adds System.out.println(fileName) to s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="23" x="688" y="264" width="230" height="27" text="Adds System.out.println(folderName) t..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="23" x="688" y="260" width="230" height="27" text="Adds System.out.println(folderName) t..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="24" x="688" y="304" width="230" height="27" text="Creates unit test &quot;testNullFileName&quot; in..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="24" x="688" y="302" width="230" height="27" text="Creates unit test &quot;testNullFileName&quot; in..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Shape" id="25" x="688" y="344" width="230" height="27" text="Adds OR condition to if statement in s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="38" x="96" y="396" width="230" height="27" text="Creates unit test &quot;testNullFileName&quot; in..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="40" x="176" y="408" width="12" height="20" measuredWidth="12" measuredHeight="20"/>
+  <widgets xsi:type="model:Arrow" id="49" x="499" y="348" width="12" height="20" measuredWidth="12" measuredHeight="20"/>
+  <widgets xsi:type="model:Shape" id="51" x="112" y="427" height="27" text="\[Extract method\] isParentOf from shou..." measuredWidth="230" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="52" x="112" y="468" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="53" x="112" y="510" width="230" height="27" text="Adds System.out.println(fileName) to s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="54" x="112" y="551" width="230" height="27" text="Adds System.out.println(folderName) t..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="56" x="112" y="635" width="230" height="27" text="Adds OR condition to if statement in s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="57" x="511" y="411" width="8" height="281" measuredWidth="8" measuredHeight="281" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="58" x="400" y="468" height="27" text="\[Extract method\] isParentOf from shou..." measuredWidth="230" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="59" x="400" y="510" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="60" x="400" y="551" width="230" height="27" text="Adds System.out.println(fileName) to s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="61" x="400" y="593" width="230" height="27" text="Adds System.out.println(folderName) t..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="62" x="400" y="427" width="230" height="27" text="Creates unit test &quot;testNullFileName&quot; in..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="63" x="400" y="635" width="230" height="27" text="Adds OR condition to if statement in s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="64" x="879" y="452" width="8" height="281" measuredWidth="8" measuredHeight="281" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="65" x="768" y="509" height="27" text="\[Extract method\] isParentOf from shou..." measuredWidth="230" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="66" x="768" y="551" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="67" x="992" y="594" width="160" height="27" text="Adds System.out.println(fi..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="69" x="768" y="468" width="230" height="27" text="Creates unit test &quot;testNullFileName&quot; in..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="70" x="768" y="676" width="230" height="27" text="Adds OR condition to if statement in s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="71" x="933" y="636" width="160" height="27" text="Adds System.out.println(fo..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="73" x="1048" y="432" text="local &#xD;&#xA;" measuredWidth="45" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="74" x="856" y="432" text="public" measuredWidth="50" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="75" x="1492" y="452" width="8" height="281" measuredWidth="8" measuredHeight="281" lineStyle="dashed" direction="bottom"/>
+  <widgets xsi:type="model:Arrow" id="76" x="1303" y="452" width="8" height="281" measuredWidth="8" measuredHeight="281" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="77" x="1192" y="509" height="27" text="\[Extract method\] isParentOf from shou..." measuredWidth="230" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="78" x="1192" y="551" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="79" x="1416" y="594" width="160" height="27" text="Adds System.out.println(fi..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="80" x="1192" y="468" width="230" height="27" text="Creates unit test &quot;testNullFileName&quot; in..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="81" x="1192" y="676" width="230" height="27" text="Adds OR condition to if statement in s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="82" x="1416" y="636" width="160" height="27" text="Adds System.out.println(fo..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="83" x="1472" y="432" text="local &#xD;&#xA;" measuredWidth="45" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="48" x="976" y="648" width="12" height="20" measuredWidth="12" measuredHeight="20"/>
+  <widgets xsi:type="model:Note" id="84" x="1280" y="432" text="public" measuredWidth="50" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="85" x="396" y="848" width="8" height="281" measuredWidth="8" measuredHeight="281" lineStyle="dashed" direction="bottom"/>
+  <widgets xsi:type="model:Arrow" id="86" x="207" y="848" width="8" height="281" measuredWidth="8" measuredHeight="281" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="87" x="96" y="905" height="27" text="\[Extract method\] isParentOf from shou..." measuredWidth="230" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="88" x="96" y="920" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="89" x="320" y="990" width="160" height="27" text="Adds System.out.println(fi..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="90" x="96" y="864" width="230" height="27" text="Creates unit test &quot;testNullFileName&quot; in..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="91" x="96" y="1072" width="230" height="27" text="Adds OR condition to if statement in s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="92" x="320" y="1032" width="160" height="27" text="Adds System.out.println(fo..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="93" x="376" y="828" text="local &#xD;&#xA;" measuredWidth="45" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="94" x="184" y="828" text="public" measuredWidth="50" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="95" x="165" y="936" width="12" height="20" measuredWidth="12" measuredHeight="20"/>
+  <widgets xsi:type="model:Shape" id="97" x="535" y="897" width="241" height="90" measuredWidth="241" measuredHeight="90" background="#eaf2fa" border="false" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="98" x="841" y="848" width="8" height="281" measuredWidth="8" measuredHeight="281" lineStyle="dashed" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="100" x="541" y="933" height="27" text="\[Extract method\] isParentOf from shou..." measuredWidth="230" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="101" x="541" y="956" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="102" x="765" y="990" width="160" height="27" text="Adds System.out.println(fi..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="103" x="541" y="864" width="230" height="27" text="Creates unit test &quot;testNullFileName&quot; in..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="104" x="541" y="1072" width="230" height="27" text="Adds OR condition to if statement in s..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="105" x="765" y="1032" width="160" height="27" text="Adds System.out.println(fo..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="106" x="821" y="828" text="local &#xD;&#xA;" measuredWidth="45" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="107" x="629" y="828" text="public" measuredWidth="50" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="111" x="541" y="901" height="27" text="Autogenerated combined message" measuredWidth="202" measuredHeight="27" background="#d0e0e3" lineStyle="dotted" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="112" x="1119" y="832" width="8" height="281" measuredWidth="8" measuredHeight="281" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="113" x="1002" y="881" width="241" height="90" measuredWidth="241" measuredHeight="90" background="#eaf2fa" border="false" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="114" x="1308" y="832" width="8" height="281" measuredWidth="8" measuredHeight="281" lineStyle="dashed" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="115" x="1008" y="917" height="27" text="\[Extract method\] isParentOf from shou..." measuredWidth="230" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="116" x="1008" y="940" width="230" height="27" text="Moves for loop from shouldIgnoreOp..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="117" x="1232" y="974" width="160" height="27" text="Adds System.out.println(fi..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="118" x="1008" y="848" width="230" height="27" text="Creates unit test &quot;testNullFileName&quot; in..." measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="119" x="1008" y="1056" width="230" height="27" text="Adds null check for fileName" measuredWidth="230" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="120" x="1232" y="1016" width="160" height="27" text="Adds System.out.println(fo..." measuredWidth="160" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="121" x="1288" y="812" text="local &#xD;&#xA;" measuredWidth="45" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="122" x="1096" y="812" text="public" measuredWidth="50" measuredHeight="29">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="123" x="1008" y="885" height="27" text="Extracts isParent logic into own method" measuredWidth="226" measuredHeight="27" background="#d0e0e3" lineStyle="dotted" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <hRuler/>
