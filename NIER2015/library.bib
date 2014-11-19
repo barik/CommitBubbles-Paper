@@ -292,3 +292,125 @@ year = {2010}
   year={2003},
   publisher={Addison-Wesley Professional}
 }
+
+@article{Littman1987,
+abstract = {Understanding how a program is constructed and how it functions are significant components of the task of maintaining or enhancing a computer program. We have analyzed vidoetaped protocols of experienced programmers as they enhanced a personnel data base program. Our analysis suggests that there are two strategies for program understanding, the systematic strategy and the as-needed strategy. The programmer using the systematic strategy traces data flow through the program in order to understand global program behavior. The programmer using the as-needed strategy focuses on local program behavior in order to localize study of the program. Our empirical data show that there is a strong relationship between using a systematic approach to acquire knowledge about the program and modifying the program successfully. Programmers who used the systematic approach to study the program constructed successful modifications; programmers who used the as-needed approach failed to construct successful modifications. Programmers who used the systematic strategy gathered knowledge about the causal interactions of the program's functional components. Programmers who used the as-needed strategy did not gather such causal knowledge and therefore failed to detect interactions among components of the program.},
+author = {Littman, David C. and Pinto, Jeannine and Letovsky, Stanley and Soloway, Elliot},
+file = {:C$\backslash$:/Users/tbarik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Littman et al. - 1987 - Mental models and software maintenance.pdf:pdf},
+journal = {Journal of Systems and Software},
+keywords = {bariknier15,software engineering,software psychology},
+mendeley-tags = {bariknier15,software engineering,software psychology},
+number = {4},
+pages = {341--355},
+title = {{Mental models and software maintenance}},
+url = {http://www.sciencedirect.com/science/article/pii/0164121287900331},
+volume = {7},
+year = {1987}
+}
+
+@inproceedings{Kirinuki2014,
+abstract = {Although there is a principle that states a commit should only include changes for a single task, it is not always respected by developers. This means that code repositories often include commits that contain tangled changes. The presence of such tangled changes hinders analyzing code repositories because most mining software repository (MSR) approaches are designed with the assumption that every commit includes only changes for a single task. In this paper, we propose a technique to inform developers that they are in the process of committing tangled changes. The proposed technique utilizes the changes included in the past commits to judge whether a given commit includes tangled changes. If it determines that the proposed commit may include tangled changes, it offers suggestions on how the tangled changes can be split into a set of untangled changes.},
+address = {New York, New York, USA},
+author = {Kirinuki, Hiroyuki and Higo, Yoshiki and Hotta, Keisuke and Kusumoto, Shinji},
+booktitle = {Proceedings of the 22nd International Conference on Program Comprehension - ICPC 2014},
+doi = {10.1145/2597008.2597798},
+file = {:D$\backslash$:/Mendeley Desktop/p262-kirinuki.pdf:pdf},
+isbn = {9781450328791},
+keywords = {Mining software repositories,Tangled changes,Understanding commits,bariknier15,icpc,icpc2014},
+mendeley-tags = {bariknier15,icpc,icpc2014},
+month = jun,
+pages = {262--265},
+publisher = {ACM Press},
+title = {{Hey! are you committing tangled changes?}},
+url = {http://dl.acm.org.prox.lib.ncsu.edu/citation.cfm?id=2597008.2597798},
+year = {2014}
+}
+
+@inproceedings{Parnin2008,
+abstract = {Software archives are one of the best sources available to researchers for understanding the software development process. However, much detective work is still necessary in order to unravel the software development story. During this process, researchers must isolate changes and follow their trails over time. In support of this analysis, several research tools have provided different representations for connecting the many changes extracted from software archives. Most of these tools are based on textual analysis of source code and use line-based differencing between software versions. This approach limits the ability to process changes structurally resulting in less concise and comparable items. Adoption of structure-based approaches have been hampered by complex implementations and overly verbose change descriptions. We present a technique for expressing changes that is fine-grained but preserves some structural aspects. The structural information itself may not have changed, but instead provides a context for interpreting the change. This in turn, enables more relevant and concise descriptions in terms of software types and programming activities. We apply our technique to common challenges that researchers face, and then we discuss and compare our results with other techniques.},
+address = {New York, New York, USA},
+author = {Parnin, Chris and G\"{o}rg, Carsten},
+booktitle = {Proceedings of the 2008 international workshop on Mining software repositories - MSR '08},
+keywords = {bariknier15,bytecode analysis,change pairs,semantic diff},
+mendeley-tags = {bariknier15},
+month = may,
+pages = {51},
+publisher = {ACM Press},
+title = {{Improving change descriptions with change contexts}},
+year = {2008}
+}
+
+@inproceedings{Parnin2012,
+abstract = {Despite its vast capacity and associative powers, the human brain does not deal well with interruptions. Particularly in situations where information density is high, such as during a programming task, recovering from an interruption requires extensive time and effort. Although modern program development environments have begun to recognize this problem, none of these tools take into account the brain's structure and limitations. In this paper, we present a conceptual framework for understanding the strengths and weaknesses of human memory, particularly with respect to it ability to deal with work interruptions. The framework explains empirical results obtained from experiments in which programmers were interrupted while working. Based on the framework, we discuss programmer information needs that development tools must satisfy and suggest several memory aids such tools could provide. We also describe our prototype implementation of these memory aids.},
+author = {Parnin, Chris and Rugaber, Spencer},
+booktitle = {2012 20th IEEE International Conference on Program Comprehension (ICPC)},
+doi = {10.1109/ICPC.2012.6240479},
+file = {:D$\backslash$:/Mendeley Desktop/06240479.pdf:pdf},
+isbn = {978-1-4673-1216-5},
+issn = {1092-8138},
+keywords = {Associative memory,Hippocampus,Humans,Memory management,Monitoring,Neuroscience,Programming,bariknier15,brain,conceptual framework,human brain,human memory strength,human memory weakness,icpc,information density,information needs,interruptions,memory failure,neurophysiology,program development environments,programmer information needs},
+mendeley-tags = {bariknier15,icpc},
+month = jun,
+pages = {123--132},
+publisher = {IEEE},
+shorttitle = {Program Comprehension (ICPC), 2012 IEEE 20th Inter},
+title = {{Programmer information needs after memory failure}},
+url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6240479},
+year = {2012}
+}
+
+
+@inproceedings{Buse2010,
+abstract = {Source code modifications are often documented with log messages. Such messages are a key component of software maintenance: they can help developers validate changes, locate and triage defects, and understand modifications. However, this documentation can be burdensome to create and can be incomplete or inaccurate. We present an automatic technique for synthesizing succinct human-readable documentation for arbitrary program differences. Our algorithm is based on a combination of symbolic execution and a novel approach to code summarization. The documentation it produces describes the effect of a change on the runtime behavior of a program, including the conditions under which program behavior changes and what the new behavior is. We compare our documentation to 250 human-written log messages from 5 popular open source projects. Employing a human study, we find that our generated documentation is suitable for supplementing or replacing 89\% of existing log messages that directly describe a code change.},
+address = {New York, New York, USA},
+author = {Buse, Raymond P.L. and Weimer, Westley R.},
+booktitle = {Proceedings of the IEEE/ACM international conference on Automated software engineering - ASE '10},
+doi = {10.1145/1858996.1859005},
+file = {:D$\backslash$:/Mendeley Desktop/p33-buse.pdf:pdf},
+isbn = {9781450301169},
+keywords = {bariknier15,code summarization,commit messages,differencing},
+mendeley-tags = {bariknier15},
+month = sep,
+pages = {33},
+publisher = {ACM Press},
+title = {{Automatically documenting program changes}},
+url = {http://dl.acm.org.prox.lib.ncsu.edu/citation.cfm?id=1858996.1859005},
+year = {2010}
+}
+
+@article{Ackerman2000,
+abstract = {Over the last 10 years, Computer-Supported Cooperative Work (CSCW) has identified a base set of findings. These findings are taken almost as assumptions within the field. In summary, they argue that human activity is highly flexible, nuanced, and contextualized and that computational entities such as information sharing, roles, and social norms need to be similarly flexible, nuanced, and contextualized. However, current systems cannot fully support the social world uncovered by these findings. In this article I argue that there is an inherent gap between the social requirements of CSCW and its technical mechanisms. The social-technical gap is the divide between what we know we must support socially and what we can support technically. Exploring, understanding, and hopefully ameliorating this social-technical gap is the central challenge for CSCW as a field and one of the central problems for human-computer interaction. Indeed, merely attesting the continued centrality of this gap could be one of the important intellectual contributions of CSCW. I also argue that the challenge of the social-technical gap creates an opportunity to refocus CSCW.},
+author = {Ackerman, Mark},
+doi = {10.1207/S15327051HCI1523\_5},
+file = {:C$\backslash$:/Users/tbarik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Ackerman - 2000 - The Intellectual Challenge of CSCW The Gap Between Social Requirements and Technical Feasibility.pdf:pdf},
+issn = {0737-0024},
+journal = {Human-Computer Interaction},
+keywords = {bariknier15},
+mendeley-tags = {bariknier15},
+month = sep,
+number = {2},
+pages = {179--203},
+publisher = {L. Erlbaum Associates Inc.},
+title = {{The Intellectual Challenge of CSCW: The Gap Between Social Requirements and Technical Feasibility}},
+url = {http://dl.acm.org/citation.cfm?id=1463015.1463020},
+volume = {15},
+year = {2000}
+}
+
+@inproceedings{Bragdon2010a,
+abstract = {Developers spend significant time reading and navigating code fragments spread across multiple locations. The file-based nature of contemporary IDEs makes it prohibitively difficult to create and maintain a simultaneous view of such fragments. We propose a novel user interface metaphor for code understanding based on collections of lightweight, editable fragments called bubbles, which form concurrently visible working sets. We present the results of a qualitative usability evaluation, and the results of a quantitative study which indicates Code Bubbles significantly improved code understanding time, while reducing navigation interactions over a widely-used IDE, for two controlled tasks.},
+address = {New York, New York, USA},
+author = {Bragdon, Andrew and Zeleznik, Robert and Reiss, Steven P. and Karumuri, Suman and Cheung, William and Kaplan, Joshua and Coleman, Christopher and Adeputra, Ferdi and LaViola, Joseph J.},
+booktitle = {Proceedings of the 28th international conference on Human factors in computing systems - CHI '10},
+doi = {10.1145/1753326.1753706},
+file = {:C$\backslash$:/Users/tbarik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Bragdon et al. - 2010 - Code bubbles.pdf:pdf},
+isbn = {9781605589299},
+keywords = {bariknier15,bubbles,java,multi-view,simultaneous views,source code},
+mendeley-tags = {bariknier15},
+month = apr,
+pages = {2503},
+publisher = {ACM Press},
+title = {{Code bubbles: A Working Set-based Interface for Code Understanding and Maintenance}},
+url = {http://dl.acm.org/citation.cfm?id=1753326.1753706},
+year = {2010}
+}

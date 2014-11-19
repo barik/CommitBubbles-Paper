@@ -3,7 +3,8 @@
 \usepackage{IEEEpreamble}
 \usepackage{booktabs}
 
-\newcommand{\purpose}[1]{\textsc{\textbf{#1}}}
+%\newcommand{\purpose}[1]{\textsc{\textbf{#1}}}
+\newcommand{\purpose}[1]{}
 
 \begin{document}
 %
@@ -16,34 +17,6 @@
 
 % \title{Version control interventions: helping developers avoid cognitive breakdowns for more effective change management}
 
-% author names and affiliations
-% use a multiple column layout for up to three different
-% affiliations
-%\author{\IEEEauthorblockN{Michael Shell}
-%\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-%Georgia Institute of Technology\\
-%Atlanta, Georgia 30332--0250\\
-%Email: http://www.michaelshell.org/contact.html}
-%\and
-%\IEEEauthorblockN{Homer Simpson}
-%\IEEEauthorblockA{Twentieth Century Fox\\
-%Springfield, USA\\
-%Email: homer@thesimpsons.com}
-%\and
-%\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
-%\IEEEauthorblockA{Starfleet Academy\\
-%San Francisco, California 96678-2391\\
-%Telephone: (800) 555--1212\\
-%Fax: (888) 555--1212}}
-
-% conference papers do not typically use \thanks and this command
-% is locked out in conference mode. If really needed, such as for
-% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
-% after \documentclass
-
-% for over three affiliations, or if they all won't fit within the width
-% of the page, use this alternative format:
-%
 \author{\IEEEauthorblockN{Titus Barik,
 Kevin Lubick,
 Emerson Murphy-Hill}
@@ -59,19 +32,17 @@ Emerson Murphy-Hill}
 
 \begin{abstract}
 %\boldmath
-
-
-
-Tools treat Software Development and the SCM process as as distinct entities.
-In practice, developers interleave development and configuration management activities.
-This forces developers to mentally change gears, negatively impacting one or both of these
-processes.
-Based on other tasks that successfully integrated previously disjoint activities like refactoring
-and compiling, we postulate that similar techniques can be used to improve the flow of Version Control Systems.
-In this paper, we present a set of troublesome use cases that affect developers today, and through an early concept design, demonstrate how these pain points might be alleviated with interveaed interactions.
-The results of our work will reduce developers' cognitive dissonance when reconciling the two cognitive models for development and SCM. 
-Three examples include more meaningful and succinct commits, encourage developers to commit more frequently, minimize build breakages and reduce the hassle of merges.
-
+When working with version control systems, developers are expected to follow a set of best practices, 
+such as constructing systematic commit histories. 
+These systematic commit histories should show well-defined steps with logical forward progress. 
+Yet, the process by which developers write source code is frequently evolutionary, or as-needed, rather than systematic. 
+We argue that the as-needed strategy that developers use to write code is incompatible with the strategy
+that developers would need to use in order to generate systematic histories, yielding non-ideal commit histories. 
+Our vision is a development model that reconciles as-needed activities with systematic commit activities. 
+Our proposed tool, Commit Bubbles, operationalizes this vision by extending the working set metaphor used by 
+Code Bubbles to support commit activities within the same environment that developers use to edit code. 
+We hypothesize that this approach will enable developers to fluidly construct better commit histories using 
+an interaction modality that is already familiar to developers.
 \end{abstract}
 
 % no keywords
@@ -86,248 +57,58 @@ Three examples include more meaningful and succinct commits, encourage developer
 % creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
-\section{Introduction}
+\section{Motivation}
 
-%This is how I envision the argument of the paper
-When writing and debugging software, developers often reason about code in fragments or slices, instead of the bulkier files that contain extraneous code~\cite{Weiser1982a}.
-There are several fragment-based tools which aid developers reason about large code bases with complex call trees~\cite{Deline2012DebuggerCanvas, DeLine2010a, Bragdon2010CodeBubbles}.
-Despite clear evidence that software engineers reason about code in fragments, there has been no support for this model of thinking from the Software Configuration Management (SCM) side of development -- modern version control systems still operate at the file-level abstraction.
-In this paper, we identify conflicts between file-based SCM and fragment-based SE practices and show how a fragmented SCM approach, called \textit{Commit Bubbles} can resolve these conflicts that developers face every day.
-%end envisioned argument
+\purpose{Best practices for version control commit messages.} 
+There are many best practices when adding commits to version control commit histories. 
+For the commit itself, these best practices include using a descriptive commit message, 
+avoiding indiscriminate commits, and making each commit a ``logical unit'' --- such that 
+each commit has a singular purpose.\footnote{\url{http://homes.cs.washington.edu/~mernst/advice/version-control.html}} 
+Extending this idea, the resulting \emph{published} commit histories should, in some sense, be \emph{systematic}, 
+in that the history shows well-defined steps, each with logical forward progress, telling a cohesive narrative without 
+broken or suboptimal steps~\cite{Loeliger2012}.
 
-Consider two widely known SCM principles ``Make each commit as small as possible, preferably a single change (1)'' and 
-``Commits should not break the build (2)''.
-As an example of how these two principles can conflict with Software Engineering,
-let us consider test-driven development (TDD).
-The TDD cycle, as explained by Kent Beck \cite{beck2003tdd} is:
-\begin{enumerate}
-\item Add a little test
-\item Run all tests and fail
-\item Make a little change
-\item Run the tests and succeed
-\item Refactor to remove duplication
-\end{enumerate}
-Finding a way to appease both the TDD process and the SCM principles is non-trivial and a compromise negatively impacts one of the two.  
-Suppose a developer commits after each TDD step in order to make commits logical units -- she would be breaking the build by committing failing tests.  
-Suppose she commits after the tests pass (step four) -- her commits would no longer be single changes.
+\purpose{Coding activities use a different model than what VCS requires.} 
+Yet the way in which developers write and edit source code is frequently done in less of a \emph{systematic} way,
+ and more of an evolutionary, or \emph{as-needed}, way~\cite{Perry1989,Littman1987}. 
+ Littman, noting the dichotomy between systematic version histories and as-needed coding processes, elaborates, 
+ ``trying to force this evolutionary process [coding] into neat, distinct, and independent phases [commits] only serves
+  to obscure the reality of software development''~\cite{Littman1987}.
 
-This type of conflict is further compounded by the idea that configuration management and writing code are treated as two distinct phases: a developer writes code and then she incorporates her changes.
+\purpose{Problem is that strategies are incompatible.} 
+The fundamental problem is that the as-needed strategy that developers frequently use to write code is incompatible with 
+the systematic strategy that developers would need to use in order to generate their published commit histories. 
+As evidence, Murphy-Hill and colleagues found that refactoring operations are performed frequently, and that programmers 
+frequently interleave refactoring with other types of programming activity. Similarly, Negara and colleagues found that 
+46\% of refactored program entities are interspersed with other changes, and that 40\% of test fixes involve changes to the tests themselves~\cite{Negara2012}. In version control histories, these as-needed edits manifest themselves as \emph{tangled} commits, that is, commits that contain two or more logical units of changes~\cite{Kirinuki2014}, and as incomplete or incorrect commit messages, which fail to capture the full description of the change~\cite{Buse2010}. Both of these issues are obstacles to supporting downstream change management tasks, such as merging commits between branches, and conducting effective code reviews~\cite{Kirinuki2014}.
 
-%The typical software development life-cycle treats development tasks, such as editing source code, 
-%and ssoftware configuration management, that is, version control tasks, as separate engineering activities.
+Our insight is that commit histories need not be immutable. 
+In modern version control systems, history revision operations, such as \emph{rebase}, 
+offer a mechanism by which a developer can take imperfect, as-needed commit histories and translate them to 
+desired systematic commits.
+\footnote{Robertson calls this ``sausage making'' --- ``The process of developing software, 
+similar to the process of making sausage, is a messy messy business \ldots If you hide the sausage making, 
+you can create a beautiful looking history where each step looks as delicious as the end-product.'' 
+(\url{http://sethrobertson.github.io/GitBestPractices/})} 
+In this paper, we argue that the primary barrier to performing effective history revision is not simply 
+a problem of technical feasibility, but rather, that current tool approaches inadequately align their tool 
+functionality with developer workflows~\cite{PerezDeRosso2013}.
 
+First, revision activities, if they occur at all, are typically performed as a distinct activity from coding~\cite{Perry1989}. 
+This context switch makes it difficult to remember all of the change activities related to a particular commit, 
+since human memory is failure-prone, especially after interruption.~\cite{Parnin2012}. 
+Second, history revision as supported in tools today takes the perspective that histories are typically correct and that 
+revision is an exceptional situation. However, exceptions are normal in work processes, and tools should support handling 
+exceptional situations as routine~\cite{Ackerman2000}.
 
-%Dividing the life-cycle into two distinct phases, development and maintenance
-
-
-% Version control best practices
-%https://homes.cs.washington.edu/~mernst/advice/version-control.html
-
-%chnage-aware toolset~\cite{Robbes2008}
-
-%http://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History
-
-%\purpose{Define SCM}
-%\purpose{Show that SCM and development have unsatisfiable constraints.}
-An important part of managing large software projects is configuration management (SCM), that is controlling the changes to a software project.
-Since developers try to build high quality software artifacts, a variety of SCM good practices have
-emerged over the decades of experience.  
-Some of these include : making commits single changes, minimizing the impact of the changes on the code base, making sure commits don't needlessly break the build, tracking defects to their original source, seamlessly integrating coworker's code.
-
-Programming best practices: saving work frequently, try the simplest fix first, keep the software maintainable, functions should do one thing, write tests that fail first, then make them pass, 
-
-%\purpose{Give concrete examples.} 
-We argue that this problem occurs quite frequently, and can be difficult to resolve even in seemingly trivial cases. 
-Developer Jim is working on a new feature.
-Midway through the feature, as he adjusts a conditional statement,
-Jim realizes a method he is about to call is named poorly.  
-He uses the Rename -- Refactor tool in his IDE to rename the method all
-throughout his project. 
-After completing the feature, he goes to commit his changes when he realizes
-his \textit{floss refactoring} is interwoven too tightly with the new feature
-to be staged into two different commits.  
-Despite there being two logical changes done to the code base, Jim makes just one
-(albeit very well explained) commit representing the changes.
-
-Like most developers, Jim first tries to stage individual lines in the files in an attempt to 
-separate the two changes.
-However, his change and the refactor overlap on some lines of code, leaving him with two subobtimal
-solutions: either make one commit with both changes or, now knowing the changes that need to be done, undo everything and manually redo the changes so that they happen separately.
-The first violates SCM best practices (specifically the each commit should have one change) and the second requires significant developer effort that breaks their development flow.
-
-%\purpose{this isn't just a jim problem -- this is a problem for lots of people}
-Several empirical studies demonstrate the problems Jim encountered occur frequently and can be potentially frustrating to resolve.
-We know for example that 30\% of important refactorings do not make it to the final product.
-Collaboration can also be a problem
-TODO build breakage paper
-de Souza 03 paper
-Zimmerman 2007 CVS
-
-%\purpose{We state our contributions}
-The contribution of this paper is a way to support software development and SCM simultaneously, rather than two separate tasks.
-We can make use of existing functionality in IDEs, such as their continuous build systems and AST renderings in order to create and IDE that blends these activities without requiring developers to switch contexts.
-We propose a series of user studies that we expect will highlight the productivity gains between this new environment and the state of the practice.
-
-danny dig has some metrics~\cite{Negara2012} to use : is it dangerous to use version control histories to study source code evolution? -- ast inferencing algorithm
-
-salient changes
-
-version control with git~\cite{Loeliger2012}
-
-% \TODO intervention, why they are necessary
-%human-error are a first class principle
-%  -- memory failures / sailent changes / attention / attention
-%  -- task avoidance (avoiding flow-breaking activities)
-%     -- parnin: interruption
-%  -- hard mental operations, uncertainty
-%
-%desirable features:
-%
-%Software Configuration management
-% -- build shouldn't break
-% -- merges should be easy to apply
-% -- diffs should be semantically meaning changes (not ``more stuff added'')
-% -- "feature sets" (benefits of fine-grained commits with coarser commits)
-% -- defect tracking (actual metadata instead of psuedo metadata)
-% --     git verscion control vs version control framework
-% --     build other frameworks (workflows) on top of dvcs (git)
-% --     locking model
-% -- % http://nvie.com/posts/a-successful-git-branching-model/ (git-flow)
-% -- SCM vs. coding: SCM should have "published/perfected" version of history
-% -- as you code "prototypes" you DO want broken versions
-%     -- idealistic vs. realistic histories
-%-- for diff we want one thing at a time, but people multi-task
-%   interleave activities
-%-- We think of features sets, SCMs think of underlying commits (one thing at time)
-%-- knows that we are working on code, what the VCS wants and helps translate and break up things up as needed
-
-%do we solve these desirable features:
-
-%-- build breakages will be readaily noticed before commit
-%-- AST merges should be easier to apply and reason about
-%-- decouple metadata from text description to allow IDEs to reason
-%   about fix statuses, etc. (feature sets --> git-flow)
-%-- interleave activities --> video
-%-- HCI: hippie-complete / comment
-
-%1. things that are hard for people --> scm
-%-- does this change break the build?
-%2. things that are hard for svm --> people
-%-- what doe these changes mean?
-
-%semantic gap: scm uses text representations, ides use AST representation
-%metadata could encode actual operation (rename refactor)
-
-%stylecop: public methods before private methods (smarter blames) --> trivial blame
-%--> semantyically-aware configuration auditing
- 
-% -- otherworkflows:
-% -- % http://www.git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows
- 
-% scm (concept) demonstrate (git)
-% TODO: did someone already do this? 
- 
-%Coding
-
-%git import streams
-
-%to differentate: not just tasks, but accouting for human error as a first-class principle in design
-%git = assume always perfect, enable breakage
-%us = assume breakage, make correction easy
-
-%Three types of NIER papers:
-
-%    Reflections (on the past) such as:
-%        Startling results that call into question current research directions;
-%        Bold arguments on current research directions that may be somehow misguided;
-%        Results that disregard established results or beliefs of evidence that call for fundamentally new directions.
-%    Initiatives (recently funded new ideas):
-%        Summaries of newly awarded, highly innovative, large multi-year research grants.
-%    Visions (of the future):
- %       Bold visions of new directions which may not yet be supported by solid results but rather by a strong and well motivated scientific intuition. An example of such a vision can be unusual synergies with other disciplines, or the importance of software engineering in problems whose software engineering aspects have not been studied earlier.
-
-%Mylyn
-%http://eclipse.org/mylyn/
-%tasks, not files and folders, the primary unit of interaction
-%   should apply to version control systems
-%https://github.com/blog/852-github-mylyn-connector-for-eclipse
-
-
-%many people talk about ``good scm practices'' -- but they really offer guidance on how to do that + cognitive load + practically in tools. same problem with lots of guideliens.
-
-%goal isn't to simpluify but (Easygit, gitless) but to conceptually map tasks to scm
-
-%easygit\footnote{\url{https://people.gnome.org/~newren/eg/}}
-
-%git survey
-% https://www.survs.com/results/QPESOB10/ME8UTHXM4M
-
-%doesn't hide git
-%https://sublimegit.net/
-
-%-- programmer interventions
-%-- scafolding
-%-- Dietary Interventions
-
-
-%\section{Examples}
-
-%\subsection{Refactoring}
-
-% remember things, omit things, misremember things...
-
-%Developer Jim is working on a new feature.
-%Midway through the feature, as he adjusts a conditional statement,
-%Jim realizes a method he is about to call is named poorly.  
-%He uses the Rename -- Refactor tool in his IDE to rename the method all
-%throught his project. 
-%After completing the feature, he goes to commit his changes when he realizes
-%his \textit{floss refactoring} is interwoven too tightly with the new feature
-%to be staged into two different commits.  
-%Despite there being two logical changes done to the code base, Jim makes just one
-%(albeit very well explained) commit representing the changes.
-
-%\subsection{Build Breakages}
-%A short while later Jim is tasked with implementing a rather large feature.
-%His changes permeate the code base, adding new design patterns and updating
-%older logic.
-%As the amount of code change grows, Jim is continuously looking for a place to commit - to document
-%the transition step by step.  
-%However, if he commits midway through, the build will be a half-changed broken mess,
-%leaving the build history blemished.
-%After an hour of his changes, the build is stable once again, and he is faced with committing them.
-%He tries to stage them into manageable, well-documented pieces, but can't easily figure out which
-%chunks are dependent on other changes to maintain a proper build.
-%In the end, Jim tries his best to recount the steps and design decisions in a single commit and 
-%hopes none of his fellow developers need to read the bloated build history.
-
-\subsection{Prototype GUI}
-
-The core problem of the above two examples is that Jim's version control system does not
-realize Jim is writing code and thus Jim has to both write the code, but also think like
-his VCS wants him to.  
-Video Figure 1 shows an example of a semantically-aware version control system that aids
-Jim in conforming to good Software Configuration Management principles.
-We see Jim in the middle of fixing a few bugs in the Recommendation class.  
-After moving some methods around and updating addCondition(), Jim's eyes are drawn by the 
-oddly named method getUserFacingString and decides to rename it.
-Scrolling down a bit further, he spots a FindBugs notification and addresses the trivial fix.
-Finally, he gets back to the change he started earlier by adding a RecommendationStruct.
-
-All throughout this process, his version control software is automatically generating
-\textit{sub-commits} (viewable on the right side of the screen).  
-Once Jim finishes his work, he is able to move the sub-commits around and group them together
-into logical changes.  
-As he moves them around, the subcommits turn green or red to indicate where build-breaking changes
-happen.
-Satisfied with the names and groupings, Jim can commit his changes, knowing they make sense and
-uphold the SCM principles his team has agreed on.
-
-% representative of what tools (Eclipse, vs, intellij)
-% REBASE TEXT COMMAND (side by side comparison?)
-
-% git stash is not right resolution --> did my build break
-% jenkins / travis CI
+Our vision is a development model that reconciles as-needed coding activities with systematic commit activities. 
+We operationalize this model by adding commit support to \emph{Code Bubbles}, a metaphor and tool that allows developers 
+to reason in terms of fragments and working sets, and allows for fluid rearrangement and manipulation of these working sets~\cite{Bragdon2010a}.
+We postulate that developers can benefit from reasoning about commit activities in the same way. 
+Our proposed extension, \emph{Commit Bubbles}, supports developers by a) blending coding and commit activities as a 
+unified activity, and b) treating history revision as a routine, rather than exceptional process. 
+We hypothesize that our approach will enable developers to construct better commit histories with less cognitive effort, 
+while integrating with their existing coding workflow in an interaction modality that is already familiar to developers.
 
 \section{TACO -- Tool Assisted Commit Operations}
 \begin{figure}
