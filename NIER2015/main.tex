@@ -386,28 +386,52 @@ to the code by extracting the broken logic to a self-explaining method isParentO
 Anthony adds in a few debug print statements (resulting in the code in Figure \ref{fig:eclipse}) and then writes a test replicating 
 the steps in the bug report.
 The print statements indicate that a null fileName is the root cause, so Anthony adds in an additional check,
-leaving his commit bubbles looking like Figure \ref{fig:bubblesAfterCheck}.
-%TODO insert bubblesAfterCheck here
+leaving his commit bubbles looking like:
+\begin{figure}[h]
+\centering
+\includegraphics[height=2.1in]{bubblesAfterCheck}
+\end{figure}
 %The history looks something like: extract method isParentOf; moved for loop to isParentOf;
 % adds debug statements;writes a test; adds null check
 
 At this point his history is a bit of a mess, so Anthony decides to reorganize it.
 First, he drags the creation of the unit test to the beginning where it is supposed to go, as per TDD standards.
-%TODO insert reorder figure
+\begin{figure}[h]
+\centering
+\includegraphics[height=2.1in]{reorder-during}
+\end{figure}
 %The history looks something like: writes a test; extract method isParentOf; moved for loop to isParentOf;
 % adds debug statements; adds null check
+
 Anthony doesn't want his debug statements in production, but he might still need them,
- so he breaks those out into his private branch with a simple drag gesture.
-%TODO insert breakout figure
+ so he breaks those out into his private branch with a simple drag gesture (Figure \ref{fig:private-branch}).
+\begin{figure}[h]
+\centering
+\includegraphics[height=2.1in]{breakout-during}
+\caption{Breaking out changes into a private branch}
+\label{fig:private-branch}
+\end{figure}
 %The history looks something like: writes a test; extract method isParentOf; moved for loop to isParentOf;
 % adds null check   | adds debug statements; 
+
 Finally, he combines the two refactoring bubbles into one because they were both needed to properly extract
-the logic of isParentOf.
-%TODO insert merge figure
+the logic of isParentOf (Figure \ref{fig:merge}).
+\begin{figure}[h]
+\centering
+\includegraphics[height=2.1in]{merge-during}
+\caption{Merging commit bubbles together using drag and drop}
+\label{fig:merge}
+\end{figure}
 %The history looks something like: writes a test; (extract method isParentOf; moved for loop to isParentOf;)
 % adds null check   | adds debug statements; 
-He adjusts the name of the merged bubble, leaving his history as in Figure \ref{fig:fixedHistory} presses commit.
-%TODO final figure
+He adjusts the commit messages of some bubbles, leaving his history as in Figure \ref{fig:fixed-history}, before pressing commit.
+
+\begin{figure}[h]
+\centering
+\includegraphics[height=2.1in]{fixed-history}
+\caption{A revised history}
+\label{fig:fixed-history}
+\end{figure}
 %The history looks something like: writes a test; (extract method isParentOf; moved for loop to isParentOf;) renamed to Extracted directory comparison to isParentOf
 % adds null check   | adds debug statements; 
 
