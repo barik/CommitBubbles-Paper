@@ -51,32 +51,32 @@
   <widgets xsi:type="model:SearchField" id="53" x="928" y="165" text="Search" measuredWidth="66" measuredHeight="24">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="55" x="701" y="280" width="217" height="27" text="Rename method addResearchCondi..." measuredWidth="217" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="55" x="592" y="280" width="217" height="27" text="Rename method addResearchCondi..." measuredWidth="217" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="56" x="711" y="344" width="197" height="27" text="Add else if statement in addC..." measuredWidth="197" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="56" x="602" y="344" width="197" height="27" text="Add else if statement in addC..." measuredWidth="197" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="57" x="718" y="430" width="183" height="27" text="Extract method handleFriend..." measuredWidth="183" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="57" x="609" y="430" width="183" height="27" text="Extract method handleFriend..." measuredWidth="183" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="58" x="717" y="370" width="185" height="27" text="addCondition() throws IOExcep..." measuredWidth="185" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="58" x="608" y="370" width="185" height="27" text="addCondition() throws IOExcep..." measuredWidth="185" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Arrow" id="59" x="806" y="396" width="8" height="35" measuredWidth="8" measuredHeight="35" direction="bottom"/>
-  <widgets xsi:type="model:Arrow" id="60" x="806" y="306" width="8" height="35" measuredWidth="8" measuredHeight="35" direction="bottom"/>
-  <widgets xsi:type="model:Shape" id="61" x="725" y="492" width="169" height="27" text="Insert blank line." measuredWidth="169" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Arrow" id="59" x="697" y="396" width="8" height="35" measuredWidth="8" measuredHeight="35" direction="bottom"/>
+  <widgets xsi:type="model:Arrow" id="60" x="697" y="306" width="8" height="35" measuredWidth="8" measuredHeight="35" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="61" x="616" y="492" width="169" height="27" text="Insert blank line." measuredWidth="169" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Arrow" id="62" x="806" y="458" width="8" height="35" measuredWidth="8" measuredHeight="35" direction="bottom"/>
+  <widgets xsi:type="model:Arrow" id="62" x="697" y="458" width="8" height="35" measuredWidth="8" measuredHeight="35" direction="bottom"/>
   <widgets xsi:type="model:Panel" id="68" x="530" y="59" measuredWidth="100" measuredHeight="100"/>
-  <widgets xsi:type="model:Note" id="63" x="543" y="544" width="169" height="121" text="Types of interactions:&#xD;&#xA;&#xD;&#xA;* Working set" measuredWidth="169" measuredHeight="121" textAlignment="Left">
+  <widgets xsi:type="model:Note" id="63" x="808" y="323" width="169" height="254" text="Types of interactions:&#xD;&#xA;&#xD;&#xA;* Working set&#xD;&#xA;* Arrows&#xD;&#xA;* Squash / Split&#xD;&#xA;* Diff (Collapse / Expand)&#xD;&#xA;&#xD;&#xA;" measuredWidth="169" measuredHeight="254" textAlignment="Left">
     <font/>
   </widgets>
   <widgets xsi:type="model:VLine" id="66" x="552" y="80" height="57" measuredWidth="6" measuredHeight="57" foreground="#ffe599"/>
   <widgets xsi:type="model:VLine" id="67" x="563" y="101" height="18" measuredWidth="6" measuredHeight="18" foreground="#a2c4c9"/>
   <widgets xsi:type="model:HLine" id="72" x="437" y="222" width="34" measuredWidth="34" measuredHeight="6"/>
-  <widgets xsi:type="model:Callout" id="74" x="907" y="264" text="A" measuredWidth="30" measuredHeight="30">
+  <widgets xsi:type="model:Callout" id="74" x="798" y="264" text="A" measuredWidth="30" measuredHeight="30">
     <font size="15px" bold="true"/>
   </widgets>
   <hRuler>
