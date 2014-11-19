@@ -167,19 +167,23 @@ to the code by extracting the broken logic to a self-explaining method isParentO
 Anthony adds in a few debug print statements (resulting in the code in Figure \ref{fig:eclipse}) and then writes a test replicating 
 the steps in the bug report.
 The print statements indicate that a null fileName is the root cause, so Anthony adds in an additional check,
-leaving his commit bubbles looking like:
+leaving his commit bubbles looking like Figure \ref{fig:unfixed-history}.
 \begin{figure}[h]
 \centering
 \includegraphics[height=2.1in]{bubblesAfterCheck}
+\caption{Anthony's history, prior to revision}
+\label{fig:unfixed-history}
 \end{figure}
 %The history looks something like: extract method isParentOf; moved for loop to isParentOf;
 % adds debug statements;writes a test; adds null check
 
 At this point his history is a bit of a mess, so Anthony decides to reorganize it.
-First, he drags the creation of the unit test to the beginning where it is supposed to go, as per TDD standards.
+First, he drags the creation of the unit test to the beginning where it is supposed to go, as per TDD standards (Figure \ref{fig:reordering}.
 \begin{figure}[h]
 \centering
 \includegraphics[height=2.1in]{reorder-during}
+\caption{Reorder the history by dragging and dropping}
+\label{fig:reordering}
 \end{figure}
 %The history looks something like: writes a test; extract method isParentOf; moved for loop to isParentOf;
 % adds debug statements; adds null check
