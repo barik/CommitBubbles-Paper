@@ -1,84 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="sketch">
-  <widgets xsi:type="model:Window" id="1" x="176" y="136" width="833" height="545" text="Code Bubbles" measuredWidth="833" measuredHeight="545" minimizeButton="true" maximizeButton="true"/>
-  <widgets xsi:type="model:Panel" id="2" x="176" y="155" width="833" height="78" measuredWidth="833" measuredHeight="78"/>
-  <widgets xsi:type="model:VButtonBar" id="34" x="824" y="155" height="78" text="New Class&#xD;&#xA;New Interface&#xD;&#xA;New Enum" measuredWidth="94" measuredHeight="78">
+  <widgets xsi:type="model:Window" id="1" x="176" y="136" width="1153" height="553" text="Code Bubbles \[with Commit Bubbles Extension\]" measuredWidth="1153" measuredHeight="553" minimizeButton="true" maximizeButton="true"/>
+  <widgets xsi:type="model:Panel" id="2" x="176" y="155" width="1153" height="78" measuredWidth="1153" measuredHeight="78"/>
+  <widgets xsi:type="model:VButtonBar" id="34" x="1136" y="155" height="78" text="New Class&#xD;&#xA;New Interface&#xD;&#xA;New Enum" measuredWidth="94" measuredHeight="78">
     <font/>
     <items x="0" y="0" width="94" height="28" text="New Class"/>
     <items x="0" y="28" width="94" height="27" text="New Interface"/>
     <items x="0" y="55" width="94" height="23" text="New Enum"/>
   </widgets>
-  <widgets xsi:type="model:Panel" id="35" x="192" y="244" height="25" measuredWidth="100" measuredHeight="25"/>
-  <widgets xsi:type="model:Icon" id="36" x="202" y="249" width="16" height="16" measuredWidth="16" measuredHeight="16" icon="find (small)"/>
-  <widgets xsi:type="model:Icon" id="37" x="224" y="249" measuredWidth="16" measuredHeight="16" icon="save (small)"/>
-  <widgets xsi:type="model:Icon" id="38" x="248" y="249" measuredWidth="16" measuredHeight="16" icon="wrench (small)"/>
-  <widgets xsi:type="model:Icon" id="39" x="271" y="249" measuredWidth="16" measuredHeight="16" icon="refresh (small)"/>
-  <widgets xsi:type="model:Shape" id="48" x="312" y="280" width="225" height="241" measuredWidth="225" measuredHeight="241" background="#f4cccc" border="false" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:WidgetGroup" id="132" x="186" y="164" measuredWidth="100" measuredHeight="25">
+    <widgets xsi:type="model:Panel" id="35" height="25" measuredWidth="100" measuredHeight="25"/>
+    <widgets xsi:type="model:Icon" id="36" x="10" y="5" measuredWidth="16" measuredHeight="16" icon="find (small)"/>
+    <widgets xsi:type="model:Icon" id="37" x="32" y="5" measuredWidth="16" measuredHeight="16" icon="save (small)"/>
+    <widgets xsi:type="model:Icon" id="38" x="56" y="5" measuredWidth="16" measuredHeight="16" icon="wrench (small)"/>
+    <widgets xsi:type="model:Icon" id="39" x="79" y="5" measuredWidth="16" measuredHeight="16" icon="refresh (small)"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="48" x="213" y="255" width="367" height="277" measuredWidth="367" measuredHeight="277" background="#f4cccc" border="false" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="49" x="202" y="384" width="287" height="137" measuredWidth="287" measuredHeight="137" background="#f4cccc" border="false" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="49" x="186" y="395" width="394" height="241" measuredWidth="394" measuredHeight="241" background="#f4cccc" border="false" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="43" x="217" y="392" width="312" height="121" measuredWidth="312" measuredHeight="121" alpha="192" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="43" x="197" y="403" width="367" height="217" measuredWidth="367" measuredHeight="217" alpha="192" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Breadcrumbs" id="41" x="233" y="408" text="org,example,hello,Main(...)" measuredWidth="199" measuredHeight="23">
-    <font/>
-    <items x="0" y="0" width="19" height="23" text="org"/>
-    <items x="39" y="0" width="45" height="23" text="example"/>
-    <items x="104" y="0" width="27" height="23" text="hello"/>
-    <items x="151" y="0" width="45" height="23" text="Main(...)"/>
-  </widgets>
-  <widgets xsi:type="model:TextArea" id="44" x="233" y="438" width="280" height="67" text="public class Activator extends AbstractUIPlugin {&#xD;&#xA;    System.out.println(&quot;Hello world!&quot;);&#xD;&#xA;}" measuredWidth="280" measuredHeight="67">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Panel" id="45" x="427" y="155" width="54" height="78" measuredWidth="54" measuredHeight="78" background="#cccccc"/>
-  <widgets xsi:type="model:Label" id="46" x="437" y="155" text="Fix #3" measuredWidth="36" measuredHeight="23">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Shape" id="47" x="320" y="292" width="209" height="89" measuredWidth="209" measuredHeight="89" alpha="192" shapeType="rectangle-rounded">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Breadcrumbs" id="50" x="330" y="296" text="org,example,hello" measuredWidth="134" measuredHeight="23">
+  <widgets xsi:type="model:Breadcrumbs" id="41" x="213" y="419" text="org,eclipse,shouldIgnoreOptionalProblems(...)" measuredWidth="283" measuredHeight="23">
     <font/>
     <items x="0" y="0" width="19" height="23" text="org"/>
-    <items x="39" y="0" width="45" height="23" text="example"/>
-    <items x="104" y="0" width="27" height="23" text="hello"/>
+    <items x="39" y="0" width="37" height="23" text="eclipse"/>
+    <items x="96" y="0" width="184" height="23" text="shouldIgnoreOptionalProblems(...)"/>
   </widgets>
-  <widgets xsi:type="model:TextArea" id="51" x="330" y="328" width="191" text="A *paragraph* of text&#xA;A _second_ row of text" measuredWidth="191" measuredHeight="38">
+  <widgets xsi:type="model:TextArea" id="44" x="213" y="449" width="340" height="155" text="    if (folderNames == null || fileName == null) {&#xD;&#xA;        return false;&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    for (int i = 0, max = folderNames.length; i &lt; max; i++) {&#xD;&#xA;        char[] folderName = folderNames[i];&#xD;&#xA;        isParentOf(folderName, fileName));&#xD;&#xA;    }&#xD;&#xA;    return false;&#xD;&#xA;}" measuredWidth="340" measuredHeight="155" value="7" verticalScrollbar="true">
+    <font size="11px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="47" x="227" y="263" width="337" height="133" measuredWidth="337" measuredHeight="133" alpha="192" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:SearchField" id="53" x="928" y="165" text="Search" measuredWidth="66" measuredHeight="24">
+  <widgets xsi:type="model:Breadcrumbs" id="50" x="243" y="270" text="org,eclipse,isParentOf(...)" measuredWidth="172" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="19" height="23" text="org"/>
+    <items x="39" y="0" width="37" height="23" text="eclipse"/>
+    <items x="96" y="0" width="73" height="23" text="isParentOf(...)"/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="53" x="1248" y="165" text="Search" measuredWidth="66" measuredHeight="24">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="55" x="592" y="280" width="217" height="27" text="Rename method addResearchCondi..." measuredWidth="217" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Shape" id="56" x="602" y="344" width="197" height="27" text="Add else if statement in addC..." measuredWidth="197" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Shape" id="57" x="609" y="430" width="183" height="27" text="Extract method handleFriend..." measuredWidth="183" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Shape" id="58" x="608" y="370" width="185" height="27" text="addCondition() throws IOExcep..." measuredWidth="185" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Arrow" id="59" x="697" y="396" width="8" height="35" measuredWidth="8" measuredHeight="35" direction="bottom"/>
-  <widgets xsi:type="model:Arrow" id="60" x="697" y="306" width="8" height="35" measuredWidth="8" measuredHeight="35" direction="bottom"/>
-  <widgets xsi:type="model:Shape" id="61" x="616" y="492" width="169" height="27" text="Insert blank line." measuredWidth="169" measuredHeight="27" background="#d0e0e3" lineStyle="dashed" shapeType="rectangle-rounded">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Arrow" id="62" x="697" y="458" width="8" height="35" measuredWidth="8" measuredHeight="35" direction="bottom"/>
-  <widgets xsi:type="model:Panel" id="68" x="530" y="59" measuredWidth="100" measuredHeight="100"/>
-  <widgets xsi:type="model:Note" id="63" x="808" y="323" width="169" height="254" text="Types of interactions:&#xD;&#xA;&#xD;&#xA;* Working set&#xD;&#xA;* Arrows&#xD;&#xA;* Squash / Split&#xD;&#xA;* Diff (Collapse / Expand)&#xD;&#xA;&#xD;&#xA;" measuredWidth="169" measuredHeight="254" textAlignment="Left">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:VLine" id="66" x="552" y="80" height="57" measuredWidth="6" measuredHeight="57" foreground="#ffe599"/>
-  <widgets xsi:type="model:VLine" id="67" x="563" y="101" height="18" measuredWidth="6" measuredHeight="18" foreground="#a2c4c9"/>
-  <widgets xsi:type="model:HLine" id="72" x="437" y="222" width="34" measuredWidth="34" measuredHeight="6"/>
-  <widgets xsi:type="model:Callout" id="74" x="798" y="264" text="A" measuredWidth="30" measuredHeight="30">
+  <widgets xsi:type="model:Callout" id="74" x="186" y="388" text="A" measuredWidth="30" measuredHeight="30">
     <font size="15px" bold="true"/>
   </widgets>
+  <widgets xsi:type="model:TextArea" id="76" x="243" y="292" width="306" height="97" text="private static boolean isParentOf(char[] folderName, &#xD;&#xA;    char[] fileName) {&#xD;&#xA;    if (folderName.length >= fileName.length) {&#xD;&#xA;        return false;&#xD;&#xA;    }&#xD;&#xA;    if (fileName\[folderName.length] != '/') {&#xD;&#xA;        return false;&#xD;&#xA;    }&#xD;&#xA;    for (int i = folderName.length - 1; i >= 0; i--) {&#xD;&#xA;        if (folderName[i] != fileName[i]) {&#xD;&#xA;            return false;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    return true;&#xD;&#xA;}" measuredWidth="306" measuredHeight="97" verticalScrollbar="true">
+    <font size="11px"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="92" x="928" y="241" width="353" height="186" measuredWidth="353" measuredHeight="186" background="#9fc5e8" border="false" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="83" x="936" y="253" width="337" height="167" measuredWidth="337" measuredHeight="167" background="#cfe2f3" alpha="192" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Callout" id="86" x="204" y="256" text="B" measuredWidth="30" measuredHeight="30">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="104" x="744" y="271" width="8" height="346" measuredWidth="8" measuredHeight="346" direction="bottom"/>
+  <widgets xsi:type="model:VLine" id="89" x="912" y="232" height="457" measuredWidth="6" measuredHeight="457" foreground="#444444" lineStyle="dashed"/>
+  <widgets xsi:type="model:Breadcrumbs" id="90" x="952" y="270" text="org,eclipse,shouldIgnoreOptionalProblems(...)" measuredWidth="283" measuredHeight="23">
+    <font/>
+    <items x="0" y="0" width="19" height="23" text="org"/>
+    <items x="39" y="0" width="37" height="23" text="eclipse"/>
+    <items x="96" y="0" width="184" height="23" text="shouldIgnoreOptionalProblems(...)"/>
+  </widgets>
+  <widgets xsi:type="model:TextArea" id="91" x="944" y="301" width="321" height="103" text="        if (folderName.length >= fileName.length) {&#xD;&#xA;            continue;&#xD;&#xA;        }&#xD;&#xA;        if (fileName\[folderName.length\] != '/') {&#xD;&#xA;            continue;&#xD;&#xA;        }&#xD;&#xA;        &#xD;&#xA;    }&#xD;&#xA;    return false;&#xD;&#xA;}" measuredWidth="321" measuredHeight="103" value="34" verticalScrollbar="true">
+    <font size="11px"/>
+  </widgets>
+  <widgets xsi:type="model:Callout" id="95" x="1248" y="241" text="E" measuredWidth="30" measuredHeight="30">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="96" x="982" y="511" measuredWidth="32" measuredHeight="32" icon="arrow-cursor (large)"/>
+  <widgets xsi:type="model:Icon" id="98" x="525" y="270" measuredWidth="24" measuredHeight="24" icon="desc (medium)"/>
+  <widgets xsi:type="model:Icon" id="99" x="525" y="408" measuredWidth="24" measuredHeight="24" icon="desc (medium)"/>
+  <widgets xsi:type="model:Panel" id="100" x="467" y="155" width="54" height="78" measuredWidth="54" measuredHeight="78" background="#b6d7a8"/>
+  <widgets xsi:type="model:Label" id="101" x="467" y="155" width="54" text="v3.9.1" measuredWidth="54" measuredHeight="23" textAlignment="Center">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="106" x="704" y="253" height="20" text="Branch - v4.0" measuredWidth="86" measuredHeight="20" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="107" x="1112" y="448" width="8" height="158" measuredWidth="8" measuredHeight="158" direction="bottom"/>
+  <widgets xsi:type="model:Shape" id="108" x="1072" y="430" height="20" text="Branch - v3.9.1" measuredWidth="95" measuredHeight="20" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="109" x="414" y="155" measuredWidth="54" measuredHeight="78">
+    <widgets xsi:type="model:Panel" id="45" width="54" height="78" measuredWidth="54" measuredHeight="78" background="#b6d7a8"/>
+    <widgets xsi:type="model:Label" id="46" width="54" text="v4.0" measuredWidth="54" measuredHeight="23" textAlignment="Center">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="111" x="525" y="155" width="68" height="78" measuredWidth="68" measuredHeight="78" background="#cccccc"/>
+  <widgets xsi:type="model:Label" id="112" x="525" y="155" width="68" text="v4.0-RC2" measuredWidth="68" measuredHeight="23" textAlignment="Center">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="115" x="593" y="155" width="89" height="78" measuredWidth="89" measuredHeight="78" background="#cccccc"/>
+  <widgets xsi:type="model:Label" id="116" x="592" y="155" width="89" text="Experimental" measuredWidth="89" measuredHeight="23" textAlignment="Center">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Callout" id="121" x="506" y="188" text="C" measuredWidth="30" measuredHeight="30">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="103" x="592" y="327" width="311" height="159" measuredWidth="311" measuredHeight="159" background="#ffe599" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="80" x="613" y="329" width="282" height="27" text=" Extract isParentOf Logic into its own method." measuredWidth="282" measuredHeight="27" background="#fff2cc" border="false" lineStyle="dashed" shapeType="rectangle-round">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="82" x="871" y="330" measuredWidth="24" measuredHeight="24" icon="desc (medium)"/>
+  <widgets xsi:type="model:Callout" id="88" x="592" y="327" text="D" measuredWidth="30" measuredHeight="30">
+    <font size="15px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="117" x="613" y="364" width="252" height="27" text="Changes continues in for loop to return..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="119" x="849" y="369" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Shape" id="120" x="613" y="395" width="252" height="27" text="\[Extract Method\] Body of for loop to isPar..." measuredWidth="252" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="122" x="849" y="401" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Shape" id="123" x="613" y="428" width="252" height="27" text="Changes return type of isParentOf to boo..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="124" x="849" y="433" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Label" id="127" x="842" y="455" text="[diff of all]" measuredWidth="53" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="93" x="990" y="464" width="245" height="27" text="Patch for 3.x optimizer race condition" measuredWidth="245" measuredHeight="27" background="#cccccc" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="129" x="613" y="285" width="252" height="27" text="Adds parallelizable optimizer module  " measuredWidth="252" measuredHeight="27" background="#cccccc" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="130" x="849" y="291" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Icon" id="131" x="1214" y="470" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <hRuler>
     <guides position="86"/>
     <guides position="571"/>
@@ -87,6 +146,9 @@
     <guides position="248"/>
     <guides position="633"/>
   </hRuler>
-  <vRuler/>
+  <vRuler>
+    <guides position="699"/>
+    <guides position="501"/>
+  </vRuler>
   <font size="12px"/>
 </model:Screen>
