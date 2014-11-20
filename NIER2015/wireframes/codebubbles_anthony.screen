@@ -9,24 +9,18 @@
   <widgets xsi:type="model:Shape" id="6" x="714" y="274" height="20" text="Branch - v4.0" measuredWidth="86" measuredHeight="20" shapeType="rectangle">
     <font/>
   </widgets>
-  <widgets xsi:type="model:WidgetGroup" id="142" x="623" y="312" measuredWidth="252" measuredHeight="27">
-    <widgets xsi:type="model:Shape" id="11" width="252" height="27" text="Adds parallelizable optimizer module  " measuredWidth="252" measuredHeight="27" background="#cccccc" shapeType="rectangle">
-      <font/>
-    </widgets>
-    <widgets xsi:type="model:Icon" id="12" x="233" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Shape" id="11" x="623" y="312" width="252" height="27" text="Adds parallelizable optimizer module  " measuredWidth="252" measuredHeight="27" background="#cccccc" shapeType="rectangle">
+    <font/>
   </widgets>
-  <widgets xsi:type="model:WidgetGroup" id="144" x="623" y="396" measuredWidth="252" measuredHeight="27">
-    <widgets xsi:type="model:Shape" id="8" width="252" height="27" text="\[Extract Method\] Body of for loop to isPar..." measuredWidth="252" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
-      <font/>
-    </widgets>
-    <widgets xsi:type="model:Icon" id="14" x="234" y="4" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Icon" id="12" x="858" y="318" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Shape" id="8" x="623" y="396" width="252" height="27" text="\[Extract Method\] Body of for loop to isPar..." measuredWidth="252" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
   </widgets>
-  <widgets xsi:type="model:WidgetGroup" id="145" x="623" y="438" measuredWidth="252" measuredHeight="27">
-    <widgets xsi:type="model:Shape" id="9" width="252" height="27" text="Changes return type of isParentOf to boo..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
-      <font/>
-    </widgets>
-    <widgets xsi:type="model:Icon" id="15" x="235" y="4" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Icon" id="14" x="858" y="400" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Shape" id="9" x="623" y="438" width="252" height="27" text="Changes return type of isParentOf to boo..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
   </widgets>
+  <widgets xsi:type="model:Icon" id="15" x="858" y="442" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <widgets xsi:type="model:Arrow" id="16" x="504" y="546" width="8" height="158" measuredWidth="8" measuredHeight="158" direction="bottom"/>
   <widgets xsi:type="model:Shape" id="17" x="464" y="528" height="20" text="Branch - v3.9.1" measuredWidth="95" measuredHeight="20" shapeType="rectangle">
     <font/>
@@ -89,6 +83,9 @@
       <font/>
     </widgets>
     <widgets xsi:type="model:Icon" id="50" x="248" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="146" x="1229" y="611" width="96" height="36" text="Drop Zone" measuredWidth="96" measuredHeight="36" background="#93c47d" alpha="122" lineStyle="dotted" shapeType="rectangle">
+    <font/>
   </widgets>
   <widgets xsi:type="model:VLine" id="63" x="368" y="396" height="457" measuredWidth="6" measuredHeight="457" foreground="#444444" lineStyle="dashed"/>
   <widgets xsi:type="model:Arrow" id="65" x="571" y="1130" width="8" height="207" measuredWidth="8" measuredHeight="207" direction="bottom"/>
@@ -203,12 +200,10 @@
   <widgets xsi:type="model:Icon" id="126" x="604" y="566" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <widgets xsi:type="model:Icon" id="127" x="1375" y="582" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <widgets xsi:type="model:Icon" id="128" x="676" y="1152" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
-  <widgets xsi:type="model:WidgetGroup" id="143" x="623" y="354" measuredWidth="255" measuredHeight="27">
-    <widgets xsi:type="model:Shape" id="140" width="252" height="27" text="Changes continues in for loop to return..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
-      <font/>
-    </widgets>
-    <widgets xsi:type="model:Icon" id="141" x="239" y="3" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Shape" id="140" x="623" y="354" width="252" height="27" text="Changes continues in for loop to return..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+    <font/>
   </widgets>
+  <widgets xsi:type="model:Icon" id="141" x="858" y="359" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
