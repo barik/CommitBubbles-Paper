@@ -224,12 +224,11 @@ Incidentally, since Anthony did not have to context switch, he quickly resumes p
 
 \section{Emerging Results}
 
-We have conducted a small, informal pilot study ($n = 5$) in which participants from our lab were asked to perform an activity similar to the one described in Section~\ref{sec:userexperience} using Git\footnote{\url{http://www.git-scm.com/}}, where developers attempted to create a revised history after completing the task. 
-From this pilot study, we found that even though participants could verbally describe the change needing to be performed, they were unable to actually accomplish the task because they frequently had to switch context between different tools; 
-the operations required to perform the change were significantly misaligned from their verbal description of the task, and the tool gave no intermediate feedback by the tool when performing the transformations (such as through the Git \emph{rebase} history revision command). 
+We have conducted an informal pilot study ($n = 5$) in which participants from our lab were asked to perform an activity similar to the one described in Section~\ref{sec:userexperience} using Git\footnote{\url{http://www.git-scm.com/}}.
+We found that even though participants could verbally describe the history revision they needed, they were unable to actually accomplish the task. The participants had to frequently switch between different tools, and the revision commands needed to perform the action were unintuitive (e.g., \emph{rebase}).
 
 Moreover, we found that participants verbally described operations in terms of code fragments, e.g., ``move this conditional statement,'' yet version control tools required them to think in terms of lines. 
-In contrast, when developers were first given the desired commit history (e.g. systematic strategy) and then instructed to make the necessary code changes, they were able to complete the task successfully. 
+In contrast, when developers were first given the desired commit history (e.g. systematic strategy) and then instructed to make the necessary code changes, they were able to both write the code and create the history. 
 We used this preliminary feedback as an inspiration for our vision.
 
 \section{Challenges}
