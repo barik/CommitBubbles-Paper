@@ -207,7 +207,6 @@ One recommended ``low-tech'' way to do this would be ``save your all your edits,
 More sophisticated approaches exist, but they are even more burdensome and error-prone because they rely on complex and non-obvious data structure-level manipulations~\cite{SausageMaking}.
 Worst of all, in either approach, he would have to abandon his current working set to perform the transformation because existing tools only allow one working set at a time.
 
-
 This interruption would have several consequences.
 Anthony might forget details of his original task, for example, that \texttt{shouldIgnoreOptionalProblems} is in a broken state.
 Even if he does remember, he is now forced to recreate his working set, which duplicates work he had already done~\cite{Ko2006}.
@@ -222,19 +221,6 @@ Even if he does remember, he is now forced to recreate his working set, which du
 With Commit Bubbles, Anthony obtains the same result without breaking his flow; after writing the bugfix, he simply drags his two commits to the 3.9.1 working set and verifies the diff looks correct (Figures \ref{fig:cross-branch} and \ref{fig:diff}, respectively).
 Commit Bubbles keeps track of the different contexts and utilizes AST- and heuristic-based algorithms (see Section \ref{sec:challenges}), to fluidly perform these history changes.
 Incidentally, since Anthony did not have to context switch, he quickly resumes properly handling the return value of \texttt{isParentOf}.
-
-% \subsection{Other Interactions with Commit Bubbles}
-
-% Our presented narrative did not capture all of the envisioned interactions that we think are useful for history revision tasks. For example:
-
-% \begin{itemize}
-% \item \textbf{Split bubble}. To separate a squashed commit, you can drag the commit of interest outside of the bubble.
-% \item \textbf{Show link between code and commit bubbles}. By clicking on a commit, the relevant code bubbles associated with that commit will visually highlighted, if it is available. Given a code bubble, a similar inverse operation is also possible.
-% \item \textbf{Convert commit bubble to code bubble.} The code within a commit bubble can be transformed into an editable code bubble.
-% \item \textbf{Create new branches}. A new branch can be created by right-clicking on the canvas or an existing commit bubble. An empty branch label is created, and the label description can be edited by double-clicking on the label.
-% \item \textbf{Untracked files} By default, untracked files and their commit bubbles are appended to a temporary unnamed branch.
-% \item \textbf{Delete file from history}. The deletion of file will automatically propagate commits. Optionally, the developer can also specify that the deletion only apply to the current commit. Such an operation is useful when a sensitive file has accidentally been committed to the repository.~\footnote{\url{https://help.github.com/articles/remove-sensitive-data/}}
-% \end{itemize}
 
 \section{Emerging Results}
 
