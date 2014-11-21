@@ -136,24 +136,19 @@ Our contribution is a concept that will allow developers to construct commit his
 
 % exploratory programming
 
-The groundwork, Code Bubbles, through which we implement our idea, uses a metaphor of light-weight editable code fragments, which are displayed on a canvas in the integrated development environment as \emph{bubbles} (Figure~\ref{fig:eclipse}). 
-These bubbles can be grouped together to form concurrently visible \emph{working sets}, or sets of bubbles that relate to each other in a way that is useful to the developer. Our idea leverages the bubbles metaphor to aid developers in remembering all of the change activities related to a particular commit.
+Researchers recognize the cognitive benefits of tools that support thinking in fragments, rather than files~\cite{Bragdon2010a,DeLine2010a,Henley2014,Coblenz2006}.
+Fragments offer a metaphor for displaying relevant pieces of information in an as-needed way, for example, when coding or debugging. 
+We postulate that version control activities frequently require fragment-based thinking, for example, when comparing code at two different states, when determining an atomic set of changes to commit, and when reordering commit histories.
+
+We chose Code Bubbles to prototype our concept because it is an open source, fragment-based development environment. Code Bubbles realizes the metaphor of light-weight editable code fragments as \emph{bubbles} (Figure~\ref{fig:eclipse}). The bubbles metaphor makes it easier for developers to see many fragments of information at once, without having to context switch between different windows or tools. The metaphor also enables fluid manipulation of fragment without enforcing rigid boundaries about where information should be placed.
 
 
-The bubbles metaphor makes it easier for developers to see many fragments of information at once, without having to context switch between different windows or tools. 
-Promisingly, existing research has shown this metaphor can be extended to other domains. 
-For example, in Debugger Canvas, DeLine and colleagues~\cite{DeLine2012} augmented the bubbles metaphor to support run-time debugging activities.
-They incorporated visualizations for temporal aspects of debugging activities and automatic branches for multi-threaded programs. 
-We assert one reason both coding and debugging are well-suited for this metaphor because the interaction aligns with the as-needed strategy that developers frequently use.
+% Our idea leverages the bubble metaphor to aid developers in remembering all of the change activities related to a particular commit.
 
-Given the success of Debugger Canvas, we postulate that developers can benefit from the bubbles metaphor when reasoning about version control commits. 
-As with coding and debugging, commit activities also require reasoning about multiple working sets, such as when branching or when comparing change between two versions. 
-And similar to debugging, the temporal aspect of commits is important in order to tell a logical, cohesive narrative.
 
-A significant issue not addressed by existing bubbles metaphors is that commit activities require translation between strategies.
-With version control, developers need to eventually translate as-needed code changes into a history that is systematic, a process that is challenging for developers with existing tools~\cite{PerezDeRosso2013, SausageMaking}. Rather than treating history revision as an independent activity, our novel idea is to support an as-needed developer workflow through a unified interaction mode that allows them to fluidly revise their history as they code.
-
-In the next section, we narrate a user experience that demonstrates how a developer would combine Code Bubbles and Commit Bubbles in their daily programming activities to correct a defect present in multiple versions of the code base.
+% For example, in Debugger Canvas, DeLine and colleagues~\cite{DeLine2012} augmented the bubbles metaphor to support run-time debugging activities.
+% They incorporated visualizations for temporal aspects of debugging activities and automatic branches for multi-threaded programs. 
+% We assert one reason both coding and debugging are well-suited for this metaphor because the interaction aligns with the as-needed strategy that developers frequently use.
 
 \subsection{Example User Experience}
 \label{sec:userexperience}
