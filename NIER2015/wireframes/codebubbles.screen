@@ -71,7 +71,7 @@
   <widgets xsi:type="model:TextArea" id="91" x="944" y="301" width="321" height="103" text="        if (folderName.length >= fileName.length) {&#xD;&#xA;            continue;&#xD;&#xA;        }&#xD;&#xA;        if (fileName\[folderName.length\] != '/') {&#xD;&#xA;            continue;&#xD;&#xA;        }&#xD;&#xA;        &#xD;&#xA;    }&#xD;&#xA;    return false;&#xD;&#xA;}" measuredWidth="321" measuredHeight="103" value="34" verticalScrollbar="true">
     <font size="11px"/>
   </widgets>
-  <widgets xsi:type="model:Callout" id="95" x="1248" y="241" text="E" measuredWidth="30" measuredHeight="30">
+  <widgets xsi:type="model:Callout" id="95" x="1248" y="241" text="D" measuredWidth="30" measuredHeight="30">
     <font size="15px" bold="true"/>
   </widgets>
   <widgets xsi:type="model:Icon" id="98" x="525" y="270" measuredWidth="24" measuredHeight="24" icon="desc (medium)"/>
@@ -101,7 +101,7 @@
   <widgets xsi:type="model:Label" id="116" x="592" y="155" width="89" text="Experimental" measuredWidth="89" measuredHeight="23" textAlignment="Center">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Callout" id="121" x="506" y="188" text="C" measuredWidth="30" measuredHeight="30">
+  <widgets xsi:type="model:Callout" id="121" x="506" y="188" text="F" measuredWidth="30" measuredHeight="30">
     <font size="15px" bold="true"/>
   </widgets>
   <widgets xsi:type="model:Shape" id="103" x="592" y="327" width="311" height="159" measuredWidth="311" measuredHeight="159" background="#ffe599" lineStyle="dotted" shapeType="rectangle-rounded">
@@ -114,7 +114,7 @@
   <widgets xsi:type="model:Label" id="127" x="842" y="455" text="[diff of all]" measuredWidth="53" measuredHeight="23">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Callout" id="88" x="592" y="327" text="D" measuredWidth="30" measuredHeight="30">
+  <widgets xsi:type="model:Callout" id="88" x="592" y="327" text="C" measuredWidth="30" measuredHeight="30">
     <font size="15px" bold="true"/>
   </widgets>
   <widgets xsi:type="model:Shape" id="117" x="613" y="364" width="252" height="27" text="Changes continues in for loop to return..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dotted" shapeType="rectangle-rounded">
@@ -138,17 +138,14 @@
   <widgets xsi:type="model:Icon" id="130" x="849" y="291" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <widgets xsi:type="model:Icon" id="131" x="1214" y="470" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <widgets xsi:type="model:Icon" id="96" x="688" y="477" measuredWidth="32" measuredHeight="32" icon="arrow-cursor (large)"/>
+  <widgets xsi:type="model:Callout" id="133" x="1280" y="188" text="E" measuredWidth="30" measuredHeight="30">
+    <font size="15px" bold="true"/>
+  </widgets>
   <hRuler>
     <guides position="86"/>
-    <guides position="571"/>
-    <guides position="344"/>
-    <guides position="271"/>
-    <guides position="248"/>
-    <guides position="633"/>
   </hRuler>
   <vRuler>
     <guides position="699"/>
-    <guides position="501"/>
   </vRuler>
   <font size="12px"/>
 </model:Screen>
