@@ -74,7 +74,6 @@
   <widgets xsi:type="model:Callout" id="95" x="1248" y="241" text="E" measuredWidth="30" measuredHeight="30">
     <font size="15px" bold="true"/>
   </widgets>
-  <widgets xsi:type="model:Icon" id="96" x="982" y="511" measuredWidth="32" measuredHeight="32" icon="arrow-cursor (large)"/>
   <widgets xsi:type="model:Icon" id="98" x="525" y="270" measuredWidth="24" measuredHeight="24" icon="desc (medium)"/>
   <widgets xsi:type="model:Icon" id="99" x="525" y="408" measuredWidth="24" measuredHeight="24" icon="desc (medium)"/>
   <widgets xsi:type="model:Panel" id="100" x="467" y="155" width="54" height="78" measuredWidth="54" measuredHeight="78" background="#b6d7a8"/>
@@ -112,6 +111,9 @@
     <font/>
   </widgets>
   <widgets xsi:type="model:Icon" id="82" x="871" y="330" measuredWidth="24" measuredHeight="24" icon="desc (medium)"/>
+  <widgets xsi:type="model:Label" id="127" x="842" y="455" text="[diff of all]" measuredWidth="53" measuredHeight="23">
+    <font/>
+  </widgets>
   <widgets xsi:type="model:Callout" id="88" x="592" y="327" text="D" measuredWidth="30" measuredHeight="30">
     <font size="15px" bold="true"/>
   </widgets>
@@ -123,13 +125,10 @@
     <font/>
   </widgets>
   <widgets xsi:type="model:Icon" id="122" x="849" y="401" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
-  <widgets xsi:type="model:Shape" id="123" x="613" y="428" width="252" height="27" text="Changes return type of isParentOf to boo..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dotted" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="123" x="582" y="464" width="252" height="27" text="Changes return type of isParentOf to boo..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dotted" shapeType="rectangle-rounded">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Icon" id="124" x="849" y="433" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
-  <widgets xsi:type="model:Label" id="127" x="842" y="455" text="[diff of all]" measuredWidth="53" measuredHeight="23">
-    <font/>
-  </widgets>
+  <widgets xsi:type="model:Icon" id="124" x="818" y="469" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <widgets xsi:type="model:Shape" id="93" x="990" y="464" width="245" height="27" text="Patch for 3.x optimizer race condition" measuredWidth="245" measuredHeight="27" background="#cccccc" shapeType="rectangle">
     <font/>
   </widgets>
@@ -138,6 +137,7 @@
   </widgets>
   <widgets xsi:type="model:Icon" id="130" x="849" y="291" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <widgets xsi:type="model:Icon" id="131" x="1214" y="470" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Icon" id="96" x="688" y="477" measuredWidth="32" measuredHeight="32" icon="arrow-cursor (large)"/>
   <hRuler>
     <guides position="86"/>
     <guides position="571"/>
