@@ -58,16 +58,22 @@ Our contribution is a concept that will allow developers to construct commit his
 \begin{figure*}
 \centering
 \includegraphics[width=\linewidth]{codebubbles}
-\caption{A mockup of Code Bubbles, extended with Commit Bubble elements. (A), (B) and (E) are code bubbles, (C) is a \emph{task context}, that is, a panel of working sets, (D) is an expanded commit bubble, consisting of three squashed commit bubbles}
+\caption{A mockup of Code Bubbles, extended with Commit Bubble elements. 
+(A), (B) and (D) are code bubbles, which can be placed on the screen by using the search bar (E) or a dragging-and-dropping from a navigation tree (not shown). 
+(F) shows a task context, that is, a panel of working sets.
+A commit bubble can be expanded (C) to reveal additional information. 
+In this figure, (C) consists of two squashed commits, with a third commit bubble being added to this set using drag-and-drop. 
+The environment offers an infinitely scrollable canvas where the developer performs both coding and commit activities.}
 \label{fig:eclipse}
 \end{figure*}
 
 \section{Motivation}
 
 \purpose{Best practices for version control commit messages.} 
+In version control systems, a \emph{commit} represents an atomic set of changes with respect to a previous state; together, these sequences of commits form a \emph{commit history}~\cite{Loeliger2012}.
 There are many best practices when adding commits to version control commit histories. 
-For the commit itself, these best practices include using a descriptive commit message, 
-avoiding \emph{indiscriminate} commits, that is, commits that blindly include all changed files, and making each commit a ``logical unit'' --- such that 
+For the commit itself, these best practices include using a descriptive commit message; 
+avoiding \emph{indiscriminate} commits, that is, commits that blindly include all changed files; and making each commit a ``logical unit'' --- such that 
 each commit has a singular purpose~\cite{GitBestPractices}.
 Extending this idea, the resulting \emph{published} commit histories should, in some sense, be \emph{systematic}, 
 in that the history shows well-defined steps, each with logical forward progress, telling a cohesive narrative without 
@@ -91,30 +97,30 @@ In version control histories, these as-needed edits manifest themselves as \emph
 Both of these issues are obstacles to supporting downstream change management tasks, such as merging commits between branches, and conducting effective code reviews~\cite{Kirinuki2014}.
 
 \purpose{History revision gets out of this conflict} 
-A potential solution is to untangle commit histories into systematic histories using history revision operations offered by modern version control systems\footnote{Robertson calls this ``sausage making'' -- ``The process of developing software, 
+A potential solution is to untangle commit histories into systematic histories using history revision operations offered by version control systems\footnote{Robertson calls this ``sausage making'' -- ``The process of developing software, 
 similar to the process of making sausage, is a messy messy business $[\ldots]$ If you hide the sausage making, 
 you can create a beautiful looking history where each step looks as delicious as the end-product.'' 
 \cite{SausageMaking}}.
 For example, a developer can theoretically reorder or delete commits using \textit{rebase}.
-However, in practice, this procedure is intricate and difficult to perform correctly~\cite{SausageMaking}.
+However, in practice, this procedure is difficult to perform correctly~\cite{SausageMaking}.
 
 \purpose{History revisions are not properly supported by tools} 
 In this paper, we argue that the primary barrier to performing effective history revision is that current revision tools inadequately align their tool 
 functionality with developer workflows~\cite{PerezDeRosso2013}.
 First, revision activities, if they occur at all, are typically performed as a distinct activity from coding~\cite{Perry1989}. 
 This context switch makes it difficult to remember all of the change activities related to a particular commit, 
-since human memory is failure-prone, especially after interruption~\cite{Parnin2012}. 
+since human memory is particularly failure-prone during these switches~\cite{Parnin2012}. 
 Second, history revision as supported in tools today takes the perspective that 
-developers are able are ordinarily able to successfully create systematic histories, and that revision is an exceptional situation. However, research indicates that exceptions are normal in work processes, and tools should support handling 
+developers re ordinarily able to successfully create systematic histories, and that revision is an exceptional situation. However, research indicates that exceptions are normal in work processes, and tools should support handling 
 exceptional situations as routine~\cite{Ackerman2000}.
 
 \purpose{we envision a tool that treats history revision as routine and integrates it with coding} 
 Our vision is a development model that reconciles as-needed coding activities with systematic commit activities. 
 We operationalize this model by adding commit support to \emph{Code Bubbles}, a metaphor and tool that allows developers 
 to reason in terms of fragments and working sets, and allows for fluid rearrangement and manipulation of these working sets~\cite{Bragdon2010a}.
-We postulate that developers can benefit from reasoning about commit activities in the same way. 
+%We postulate that developers can benefit from reasoning about commit activities in the same way. 
 Our proposed extension, \emph{Commit Bubbles}, supports developers by a) blending coding and commit activities as a 
-unified activity, and b) treating history revision as a routine, rather than exceptional process. 
+unified activity to minimize context switching, and b) treating history revision as a routine, rather than exceptional process. 
 Our contribution is a concept that will allow developers to construct commit histories that adhere to version control best practices with less cognitive effort, and in a way that integrates with their as-needed coding workflows.
 
 %\section{TACO -- Tool Assisted Commit Operations}
@@ -133,7 +139,7 @@ Our contribution is a concept that will allow developers to construct commit his
 
 % exploratory programming
 
-The groundwork, Code Bubbles, through which we implement our idea, uses a metaphor of light-weight editable code fragments, which are displayed on a canvas in the editor as \emph{bubbles} (Figure~\ref{fig:eclipse}). 
+The groundwork, Code Bubbles, through which we implement our idea, uses a metaphor of light-weight editable code fragments, which are displayed on a canvas in the integrated development environment as \emph{bubbles} (Figure~\ref{fig:eclipse}). 
 These bubbles can be grouped together to form concurrently visible \emph{working sets}, or sets of bubbles that relate to each other in a way that is useful to the developer. Our idea leverages the bubbles metaphor to aid developers in remembering all of the change activities related to a particular commit.
 
 
@@ -141,7 +147,7 @@ The bubbles metaphor makes it easier for developers to see many fragments of inf
 Promisingly, existing research has shown this metaphor can be extended to other domains. 
 For example, in Debugger Canvas, DeLine and colleagues~\cite{DeLine2012} augmented the bubbles metaphor to support run-time debugging activities.
 They incorporated visualizations for temporal aspects of debugging activities and automatic branches for multi-threaded programs. 
-We assert one reason both of these activities (coding and debugging) are well-suited for this metaphor because the interaction aligns with the as-needed strategy that developers frequently use. 
+We assert one reason both coding and debugging are well-suited for this metaphor because the interaction aligns with the as-needed strategy that developers frequently use.
 
 Given the success of Debugger Canvas, we postulate that developers can benefit from the bubbles metaphor when reasoning about version control commits. 
 As with coding and debugging, commit activities also require reasoning about multiple working sets, such as when branching or when comparing change between two versions. 
@@ -157,49 +163,52 @@ In the next section, we narrate a user experience that demonstrates how a develo
 
 Anthony is a software developer who has been tasked with adding a new feature to the Eclipse JDT 4.0 branch\footnote{This example is based on the \texttt{Main.java} file located at \url{http://download.eclipse.org/eclipse/downloads/drops4/R-4.4.1-201409250400/#JDTCORE}}. %TODO
 During this coding activity, he opens the method \texttt{shouldIgnoreOptionalProblems} as a code bubble~(Figure \ref{fig:eclipse}A).
-As he examines the method, he notices a particularly complicated piece of logic within one of the loops, which he decides to refactor to \texttt{isParentOf} using a combination of the extract method feature of his editor and some manual cleanup~(Figure \ref{fig:eclipse}B).
+As he examines the method, he notices a particularly complicated piece of logic the loop, which he decides to refactor to \texttt{isParentOf} using a combination of the extract method tool of his integrated development environment and some manual cleanup~(Figure \ref{fig:eclipse}B).
 Simultaneously, Commit Bubbles generates three new commit bubbles to reflect these actions~(Figure \ref{fig:presquash-history}).
 
-
-These three commit bubbles are all part of the same change, so he combines them into one larger commit bubble
+These three commit bubbles are all part of the same change, so he \textit{squashes}, that is, combines them into one larger commit bubble by dragging and dropping.
 He edits the autogenerated commit message to better reflect his intent, as seen in Figure \ref{fig:eclipse}D.
 
 Anthony is about to handle the return value of the newly extracted method when he notices the extracted code has a bug -- \texttt{isParentOf} only checks for the Unix line separator (\texttt{`/'}).
 Anthony adds a condition for the Windows line separator (\texttt{`\textbackslash\textbackslash'}) and creates a local variable to reduce redundant code.
-He squashes these two commit bubbles into one~(Figure \ref{fig:cross-branch}A).
-This bug exists in the 3.9.1 branch as well, which he verifies instantiating the corresponding code bubble (Figure \ref{fig:eclipse}E).
+As before, he squashes these two commit bubbles into one~(Figure \ref{fig:cross-branch}A).
+This bug exists in the 3.9.1 branch as well, which he verifies by instantiating the corresponding code bubble (Figure \ref{fig:eclipse}E).
 %He would like to copy the two commits dealing with the bugfix from the 4.0 branch to the 3.9.1 branch.
 
 \begin{figure}
 \centering
 \includegraphics[height=1.9in]{presquash-history}
-\caption{Commit bubbles generated automatically while developing code.  A solid outline indicates the commit bubble has been stored to public history, dashed outlines indicate commits that can be reordered or deleted}
+\caption{Commit bubbles are generated automatically while developing code. 
+A solid outline indicates the commit bubble has been stored to public history, dashed outlines indicate commits that can be reordered.
+These auto-generated commit messages give a starting point for a systematic history.}
 \label{fig:presquash-history}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=3.0in]{cross-branch2}
-\caption{Copying commit bubbles across working sets.}
+\caption{Commit bubbles are copied from one branch and integrated into another by drag-and-dropping the commit bubble from the source branch to the target branch.
+While existing tools optimize for making commits, our tool makes revising history tasks just as easy.
+}
 \label{fig:cross-branch}
 \end{figure}
-In a traditional version control system, Anthony would not be able to easily transfer his commits across the two branches;
+In a traditional version control tool, Anthony would not be able to easily transfer his commits across the two branches;
 line-based patches do not understand the semantics of the code and fails to apply the patch.
 He would not be able to transfer the refactoring commits (Figure \ref{fig:eclipse}D) and the bugfix either because the branch is in a strict ``bugfixes only'' cycle which does not allow non-essential changes such as refactorings.
 Decoupling this relatively simply refactoring change from the bugfix is unexpectedly nontrivial.
 One recommended ``low-tech'' way to do this would be ``save your all your edits, then re-introduce them in logical chunks, committing as you go''~\cite{GitBestPractices}.
-More sophisticated approaches exist, but they are even more burdensome and error-prone because it relies on complex and non-obvious git commands~\cite{SausageMaking}.
+More sophisticated approaches exist, but they are even more burdensome and error-prone because they rely on complex and non-obvious data structure-level manipulations~\cite{SausageMaking}.
 Worst of all, in either approach, he would have to abandon his current working set to perform the transformation because existing tools only allow one working set at a time.
 
 
 This interruption would have several consequences.
-First, Anthony might forget details of his original task, for example, that \texttt{shouldIgnoreOptionalProblems} is in a broken state.
-Second, even if he does remember, he now needs to recreate his working set which duplicates work he had already done.
+Anthony might forget details of his original task, for example, that \texttt{shouldIgnoreOptionalProblems} is in a broken state.
+Even if he does remember, he is now forced to recreate his working set, which duplicates work he had already done~\cite{Ko2006}.
 
 \begin{figure}
 \centering
 \includegraphics[width=2.2in]{cross-branch-diff}
-\caption{An inline diff visualization of a squashed commit bubble. The diff is presented on an already-visible code bubble present within in the current task context.}
+\caption{An inline diff visualization of a squashed commit bubble. The diff is presented on an already-visible code bubble present within in the current task context to minimize context switching.}
 \label{fig:diff}
 \end{figure}
 
@@ -222,9 +231,9 @@ Incidentally, since Anthony did not have to context switch, he quickly resumes p
 
 \section{Emerging Results}
 
-We have conducted a small, informal pilot study in which participants from our lab were asked to perform an activity similar to the one described in Section~\ref{sec:userexperience} using Git\footnote{\url{http://www.git-scm.com/}}, where developers attempted to create a revised history after completing the task. 
+We have conducted a small, informal pilot study ($n = 5$) in which participants from our lab were asked to perform an activity similar to the one described in Section~\ref{sec:userexperience} using Git\footnote{\url{http://www.git-scm.com/}}, where developers attempted to create a revised history after completing the task. 
 From this pilot study, we found that even though participants could verbally describe the change needing to be performed, they were unable to actually accomplish the task because they frequently had to switch context between different tools; 
-the operations required to perform the change were significantly misaligned than their verbal description of the task, and that there was no intermediate feedback by the tool when performing the transformations (such as through the Git \emph{rebase} history revision command). 
+the operations required to perform the change were significantly misaligned from their verbal description of the task, and the tool gave no intermediate feedback by the tool when performing the transformations (such as through the Git \emph{rebase} history revision command). 
 
 Moreover, we found that participants verbally described operations in terms of code fragments, e.g., ``move this conditional statement,'' yet version control tools required them to think in terms of lines. 
 In contrast, when developers were first given the desired commit history (e.g. systematic strategy) and then instructed to make the necessary code changes, they were able to complete the task successfully. 
@@ -232,7 +241,7 @@ We used this preliminary feedback as an inspiration for our vision.
 
 \section{Challenges}
 \label{sec:challenges}
-In this section, we articulate several technical and usability challenges that we face in realizing our vision, and while doing so, reference related work that makes progress towards these areas.  
+We articulate technical and usability challenges that we face in realizing our vision, and while doing so, reference related work that makes progress towards these areas.  
 
 \textbf{Technical challenges.} Two technical challenges of note require techniques that can automatically generate commits in real time and more robustly rearange commit history.
 Generating commits is straight forward when the developer explicitly uses a tool, but research has shown that many developers perform operations manually, even when an automatic tool is available~\cite{Murphy-Hill2012c}.
@@ -246,7 +255,7 @@ First, it is possible that keeping coding and commit activities as separate acti
 It is also possible that developers do not find the unification of these activities supports their flow; instead, they may be perceived as interruptions~\cite{Parnin2012}. 
 In addition, we have not yet addressed the the problem of ``bubble'' overload, in which multiple bubbles for different tasks present themselves to the developer simultaneously, resulting in task contexts unmanageable for the developer. 
 A possible avenue for addressing these issues may be recommendation systems, which appropriately reveal and dismiss bubbles as needed to support a particular task~\cite{Robillard2010a, Murphy2005}.
-Importantly, we tacitly assumed that the future of IDEs will use the bubbles metaphor; further user studies are needed to validate the appropriateness of this metaphor as a general development environment for different tasks.
+Importantly, we tacitly assumed that the future of IDEs will use the bubbles metaphor; further user studies are needed to validate this metaphor as a general development environment for different tasks.
 
 
 \section{Conclusion}
