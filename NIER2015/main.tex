@@ -140,7 +140,7 @@ Researchers recognize the cognitive benefits of tools that support thinking in f
 Fragments offer a metaphor for displaying relevant pieces of information in an as-needed way, for example, when coding or debugging. 
 We postulate that version control activities frequently require fragment-based thinking, for example, when comparing code at two different states, when determining an atomic set of changes to commit, and when reordering commit histories.
 
-We chose Code Bubbles to prototype our concept because it is an open source, fragment-based development environment. Code Bubbles realizes the metaphor of light-weight editable code fragments as \emph{bubbles} (Figure~\ref{fig:eclipse}). The bubbles metaphor makes it easier for developers to see many fragments of information at once, without having to context switch between different windows or tools. The metaphor also enables fluid manipulation of fragment without enforcing rigid boundaries about where information should be placed.
+We chose Code Bubbles to prototype our concept because it is an open source, fragment-based development environment. Code Bubbles realizes the metaphor of light-weight editable code fragments as \emph{bubbles} (Figure~\ref{fig:eclipse}). The bubbles metaphor makes it easier for developers to see many fragments of information at once, without having to context switch between different windows or tools. The metaphor also enables fluid manipulation of fragments without enforcing rigid boundaries about where information should be placed.
 
 
 % Our idea leverages the bubble metaphor to aid developers in remembering all of the change activities related to a particular commit.
@@ -157,7 +157,7 @@ We chose Code Bubbles to prototype our concept because it is an open source, fra
 % A significant issue not addressed by existing bubbles metaphors is that commit activities require translation between strategies.
 % With version control, developers need to eventually translate as-needed code changes into a history that is systematic, a process that is challenging for developers with existing tools~\cite{PerezDeRosso2013, SausageMaking}. Rather than treating history revision as an independent activity, our idea is to support an as-needed developer workflow through a unified interaction mode that allows them to fluidly revise their history as they code.
 
-Our contribution, Commit Bubbles, extends fragment-based tools to support the manipulation of commits, an essential activity to translating as-needed activities into a systematic history. Existing version control tools require that developers code in a systematic way, and therefore assume
+Our contribution, Commit Bubbles, extends fragment-based tools to support the manipulation of commits, an essential activity to translating as-needed activities into a systematic history. Existing version control tools require that developers code in a systematic way. Therefore, these tools assume
 that commit histories by default align with version control best practices, and that revision is rare.
 Our insight is that by treating revision as a frequent and routine activity, our approach allows developers to continue working in their as-needed way, while simultaneously producing systematic histories. 
 
@@ -208,7 +208,7 @@ Worst of all, in either approach, he would have to abandon his current working s
 
 This interruption would have several consequences.
 Anthony might forget details of his original task, for example, that \texttt{shouldIgnoreOptionalProblems} is in a broken state.
-Even if he does remember, he is now forced to recreate his working set, which duplicates work he had already done~\cite{Ko2006}.
+Even if he does remember, he is now forced to recreate his working set, which duplicates work he has already done~\cite{Ko2006}.
 
 \begin{figure}
 \centering
