@@ -150,7 +150,20 @@ We chose Code Bubbles to prototype our concept because it is an open source, fra
 % They incorporated visualizations for temporal aspects of debugging activities and automatic branches for multi-threaded programs. 
 % We assert one reason both coding and debugging are well-suited for this metaphor because the interaction aligns with the as-needed strategy that developers frequently use.
 
-\subsection{Example User Experience}
+% Given the success of Debugger Canvas, we postulate that developers can benefit from the bubbles metaphor when reasoning about version control commits. 
+% As with coding and debugging, commit activities also require reasoning about multiple working sets, such as when branching or when comparing change between two versions. 
+% And similar to debugging, the temporal aspect of commits is important in order to tell a logical, cohesive narrative.
+
+% A significant issue not addressed by existing bubbles metaphors is that commit activities require translation between strategies.
+% With version control, developers need to eventually translate as-needed code changes into a history that is systematic, a process that is challenging for developers with existing tools~\cite{PerezDeRosso2013, SausageMaking}. Rather than treating history revision as an independent activity, our idea is to support an as-needed developer workflow through a unified interaction mode that allows them to fluidly revise their history as they code.
+
+Our contribution, Commit Bubbles, extends fragment-based tools to support the manipulation of commits, an essential activity to translating as-needed activities into a systematic history. Existing version control tools require that developers code in a systematic way, and therefore assume
+that commit histories by default align with version control best practices, and that revision is rare.
+Our insight is that by treating revision as a frequent and routine activity, our approaches allows developers to continue working in their as-needed way, while simultaneously producing systematic histories. 
+
+In the next section, we narrate a user experience that demonstrates how a developer would use Commit Bubbles with existing fragment-based tools in their daily programming activities to correct a defect present in multiple versions of the code base. 
+
+\subsection*{Example User Experience}
 \label{sec:userexperience}
 
 Anthony is a software developer who has been tasked with adding a new feature to the Eclipse JDT 4.0 branch\footnote{This example is based on the \texttt{Main.java} file located at \url{http://download.eclipse.org/eclipse/downloads/drops4/R-4.4.1-201409250400/#JDTCORE}}. %TODO
@@ -165,6 +178,8 @@ Anthony is about to handle the return value of the newly extracted method when h
 Anthony adds a condition for the Windows line separator (\texttt{`\textbackslash\textbackslash'}) and creates a local variable to reduce redundant code.
 As before, he squashes these two commit bubbles into one~(Figure \ref{fig:cross-branch}A).
 This bug exists in the 3.9.1 branch as well, which he verifies by instantiating the corresponding code bubble (Figure \ref{fig:eclipse}E).
+With Commit Bubbles, Anthony can have more than version of a fragment open at time.
+
 %He would like to copy the two commits dealing with the bugfix from the 4.0 branch to the 3.9.1 branch.
 
 \begin{figure}
