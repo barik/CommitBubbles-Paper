@@ -105,7 +105,7 @@
   <widgets xsi:type="model:Callout" id="121" x="506" y="188" text="C" measuredWidth="30" measuredHeight="30">
     <font size="15px" bold="true"/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="103" x="592" y="327" width="311" height="159" measuredWidth="311" measuredHeight="159" background="#ffe599" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="103" x="592" y="327" width="311" height="159" measuredWidth="311" measuredHeight="159" background="#ffe599" lineStyle="dotted" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Shape" id="80" x="613" y="329" width="282" height="27" text=" Extract isParentOf Logic into its own method." measuredWidth="282" measuredHeight="27" background="#fff2cc" border="false" lineStyle="dashed" shapeType="rectangle-round">
@@ -115,15 +115,15 @@
   <widgets xsi:type="model:Callout" id="88" x="592" y="327" text="D" measuredWidth="30" measuredHeight="30">
     <font size="15px" bold="true"/>
   </widgets>
-  <widgets xsi:type="model:Shape" id="117" x="613" y="364" width="252" height="27" text="Changes continues in for loop to return..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="117" x="613" y="364" width="252" height="27" text="Changes continues in for loop to return..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dotted" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Icon" id="119" x="849" y="369" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
-  <widgets xsi:type="model:Shape" id="120" x="613" y="395" width="252" height="27" text="\[Extract Method\] Body of for loop to isPar..." measuredWidth="252" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="120" x="613" y="395" width="252" height="27" text="\[Extract Method\] Body of for loop to isPar..." measuredWidth="252" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Icon" id="122" x="849" y="401" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
-  <widgets xsi:type="model:Shape" id="123" x="613" y="428" width="252" height="27" text="Changes return type of isParentOf to boo..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="123" x="613" y="428" width="252" height="27" text="Changes return type of isParentOf to boo..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dotted" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Icon" id="124" x="849" y="433" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>

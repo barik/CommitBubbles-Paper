@@ -13,11 +13,11 @@
     <font/>
   </widgets>
   <widgets xsi:type="model:Icon" id="12" x="858" y="318" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
-  <widgets xsi:type="model:Shape" id="8" x="623" y="396" width="252" height="27" text="\[Extract Method\] Body of for loop to isPar..." measuredWidth="252" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="8" x="623" y="396" width="252" height="27" text="\[Extract Method\] Body of for loop to isPar..." measuredWidth="252" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Icon" id="14" x="858" y="400" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
-  <widgets xsi:type="model:Shape" id="9" x="623" y="438" width="252" height="27" text="Changes return type of isParentOf to boo..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="9" x="623" y="438" width="252" height="27" text="Changes return type of isParentOf to boo..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dotted" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Icon" id="15" x="858" y="442" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
@@ -36,13 +36,13 @@
     <font/>
   </widgets>
   <widgets xsi:type="model:WidgetGroup" id="23" x="62" y="594" measuredWidth="264" measuredHeight="27">
-    <widgets xsi:type="model:Shape" id="7" width="264" height="27" text=" Extract isParentOf Logic into its own method." measuredWidth="264" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+    <widgets xsi:type="model:Shape" id="7" width="264" height="27" text=" Extract isParentOf Logic into its own method." measuredWidth="264" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
       <font/>
     </widgets>
     <widgets xsi:type="model:Icon" id="13" x="248" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   </widgets>
   <widgets xsi:type="model:WidgetGroup" id="98" x="48" y="629" measuredWidth="311" measuredHeight="123">
-    <widgets xsi:type="model:Shape" id="31" width="311" height="123" measuredWidth="311" measuredHeight="123" background="#ffe599" lineStyle="dashed" shapeType="rectangle-rounded">
+    <widgets xsi:type="model:Shape" id="31" width="311" height="123" measuredWidth="311" measuredHeight="123" background="#ffe599" lineStyle="dotted" shapeType="rectangle-rounded">
       <font/>
     </widgets>
     <widgets xsi:type="model:Shape" id="32" x="21" y="2" width="282" height="27" text="Fixes Windows Path seperator logic in parent..." measuredWidth="282" measuredHeight="27" background="#fff2cc" border="false" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-round">
@@ -53,13 +53,13 @@
       <font/>
     </widgets>
     <widgets xsi:type="model:WidgetGroup" id="35" x="14" y="69" measuredWidth="268" measuredHeight="27">
-      <widgets xsi:type="model:Shape" id="36" width="268" height="27" text="Adds Windows seperator alongside Unix pat..." measuredWidth="268" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+      <widgets xsi:type="model:Shape" id="36" width="268" height="27" text="Adds Windows seperator alongside Unix pat..." measuredWidth="268" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
         <font/>
       </widgets>
       <widgets xsi:type="model:Icon" id="37" x="251" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
     </widgets>
     <widgets xsi:type="model:WidgetGroup" id="38" x="14" y="35" measuredWidth="269" measuredHeight="27">
-      <widgets xsi:type="model:Shape" id="39" width="268" height="27" text="\[Extract Local Variable\] lastChar created from..." measuredWidth="268" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+      <widgets xsi:type="model:Shape" id="39" width="268" height="27" text="\[Extract Local Variable\] lastChar created from..." measuredWidth="268" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
         <font/>
       </widgets>
       <widgets xsi:type="model:Icon" id="40" x="253" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
@@ -79,7 +79,7 @@
     <font/>
   </widgets>
   <widgets xsi:type="model:WidgetGroup" id="48" x="777" y="610" measuredWidth="264" measuredHeight="27">
-    <widgets xsi:type="model:Shape" id="49" width="264" height="27" text=" Extract isParentOf Logic into its own method." measuredWidth="264" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+    <widgets xsi:type="model:Shape" id="49" width="264" height="27" text=" Extract isParentOf Logic into its own method." measuredWidth="264" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
       <font/>
     </widgets>
     <widgets xsi:type="model:Icon" id="50" x="248" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
@@ -107,13 +107,13 @@
       <font/>
     </widgets>
     <widgets xsi:type="model:WidgetGroup" id="134" x="14" y="69" measuredWidth="268" measuredHeight="27">
-      <widgets xsi:type="model:Shape" id="135" width="268" height="27" text="Adds Windows seperator alongside Unix pat..." measuredWidth="268" measuredHeight="27" background="#fff2cc" alpha="64" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+      <widgets xsi:type="model:Shape" id="135" width="268" height="27" text="Adds Windows seperator alongside Unix pat..." measuredWidth="268" measuredHeight="27" background="#fff2cc" alpha="64" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
         <font/>
       </widgets>
       <widgets xsi:type="model:Icon" id="136" x="251" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
     </widgets>
     <widgets xsi:type="model:WidgetGroup" id="137" x="14" y="35" measuredWidth="269" measuredHeight="27">
-      <widgets xsi:type="model:Shape" id="138" width="268" height="27" text="\[Extract Local Variable\] lastChar created from..." measuredWidth="268" measuredHeight="27" background="#cfe2f3" alpha="128" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+      <widgets xsi:type="model:Shape" id="138" width="268" height="27" text="\[Extract Local Variable\] lastChar created from..." measuredWidth="268" measuredHeight="27" background="#cfe2f3" alpha="128" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
         <font/>
       </widgets>
       <widgets xsi:type="model:Icon" id="139" x="253" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
@@ -137,7 +137,7 @@
     </widgets>
   </widgets>
   <widgets xsi:type="model:WidgetGroup" id="99" x="979" y="638" measuredWidth="311" measuredHeight="123">
-    <widgets xsi:type="model:Shape" id="100" width="311" height="123" measuredWidth="311" measuredHeight="123" background="#ffe599" lineStyle="dashed" shapeType="rectangle-rounded">
+    <widgets xsi:type="model:Shape" id="100" width="311" height="123" measuredWidth="311" measuredHeight="123" background="#ffe599" lineStyle="dotted" shapeType="rectangle-rounded">
       <font/>
     </widgets>
     <widgets xsi:type="model:Shape" id="101" x="21" y="2" width="282" height="27" text="Fixes Windows Path seperator logic in parent..." measuredWidth="282" measuredHeight="27" background="#fff2cc" border="false" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-round">
@@ -148,13 +148,13 @@
       <font/>
     </widgets>
     <widgets xsi:type="model:WidgetGroup" id="104" x="14" y="69" measuredWidth="268" measuredHeight="27">
-      <widgets xsi:type="model:Shape" id="105" width="268" height="27" text="Adds Windows seperator alongside Unix pat..." measuredWidth="268" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+      <widgets xsi:type="model:Shape" id="105" width="268" height="27" text="Adds Windows seperator alongside Unix pat..." measuredWidth="268" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
         <font/>
       </widgets>
       <widgets xsi:type="model:Icon" id="106" x="251" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
     </widgets>
     <widgets xsi:type="model:WidgetGroup" id="107" x="14" y="35" measuredWidth="269" measuredHeight="27">
-      <widgets xsi:type="model:Shape" id="108" width="268" height="27" text="\[Extract Local Variable\] lastChar created from..." measuredWidth="268" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+      <widgets xsi:type="model:Shape" id="108" width="268" height="27" text="\[Extract Local Variable\] lastChar created from..." measuredWidth="268" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
         <font/>
       </widgets>
       <widgets xsi:type="model:Icon" id="109" x="253" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
@@ -162,7 +162,7 @@
   </widgets>
   <widgets xsi:type="model:Icon" id="64" x="1160" y="645" measuredWidth="32" measuredHeight="32" icon="arrow-cursor (large)"/>
   <widgets xsi:type="model:WidgetGroup" id="110" x="411" y="1176" measuredWidth="311" measuredHeight="123">
-    <widgets xsi:type="model:Shape" id="111" width="311" height="123" measuredWidth="311" measuredHeight="123" background="#ffe599" lineStyle="dashed" shapeType="rectangle-rounded">
+    <widgets xsi:type="model:Shape" id="111" width="311" height="123" measuredWidth="311" measuredHeight="123" background="#ffe599" lineStyle="dotted" shapeType="rectangle-rounded">
       <font/>
     </widgets>
     <widgets xsi:type="model:Shape" id="112" x="21" y="2" width="282" height="27" text="Fixes Windows Path seperator logic in parent..." measuredWidth="282" measuredHeight="27" background="#fff2cc" border="false" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-round">
@@ -173,13 +173,13 @@
       <font/>
     </widgets>
     <widgets xsi:type="model:WidgetGroup" id="115" x="14" y="69" measuredWidth="268" measuredHeight="27">
-      <widgets xsi:type="model:Shape" id="116" width="268" height="27" text="Adds Windows seperator alongside Unix pat..." measuredWidth="268" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+      <widgets xsi:type="model:Shape" id="116" width="268" height="27" text="Adds Windows seperator alongside Unix pat..." measuredWidth="268" measuredHeight="27" background="#fff2cc" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
         <font/>
       </widgets>
       <widgets xsi:type="model:Icon" id="117" x="251" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
     </widgets>
     <widgets xsi:type="model:WidgetGroup" id="118" x="14" y="35" measuredWidth="269" measuredHeight="27">
-      <widgets xsi:type="model:Shape" id="119" width="268" height="27" text="\[Extract Local Variable\] lastChar created from..." measuredWidth="268" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dashed" shapeType="rectangle-rounded">
+      <widgets xsi:type="model:Shape" id="119" width="268" height="27" text="\[Extract Local Variable\] lastChar created from..." measuredWidth="268" measuredHeight="27" background="#cfe2f3" textAlignment="Left" lineStyle="dotted" shapeType="rectangle-rounded">
         <font/>
       </widgets>
       <widgets xsi:type="model:Icon" id="120" x="253" y="6" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
@@ -200,10 +200,13 @@
   <widgets xsi:type="model:Icon" id="126" x="604" y="566" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <widgets xsi:type="model:Icon" id="127" x="1375" y="582" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
   <widgets xsi:type="model:Icon" id="128" x="676" y="1152" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
-  <widgets xsi:type="model:Shape" id="140" x="623" y="354" width="252" height="27" text="Changes continues in for loop to return..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dashed" shapeType="rectangle-rounded">
+  <widgets xsi:type="model:Shape" id="140" x="623" y="354" width="252" height="27" text="Changes continues in for loop to return..." measuredWidth="252" measuredHeight="27" background="#fff2cc" lineStyle="dotted" shapeType="rectangle-rounded">
     <font/>
   </widgets>
   <widgets xsi:type="model:Icon" id="141" x="858" y="359" measuredWidth="16" measuredHeight="16" icon="empty-arrow-right (small)"/>
+  <widgets xsi:type="model:Callout" id="147" x="1035" y="736" text="A" measuredWidth="25" measuredHeight="25">
+    <font bold="true"/>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>
