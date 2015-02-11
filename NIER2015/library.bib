@@ -50,7 +50,6 @@ year = {2000}
 
 @inproceedings{Murphy2005,
 abstract = {Integrated development environments have been designed and engineered to display structural information about the source code of large systems. When a development task lines up with the structure of the system, the tools in these environments do a great job of supporting developers in their work. Unfortunately, many development tasks do not have this characteristic. Instead, they involve changes that are scattered across the source code and various other kinds of artifacts, including bug reports and documentation. Today's development environments provide little support for working with scattered pieces of a system, and as a result, are not adequately supporting the ways in which developers work on the system. Fortunately, many development tasks do have a structure. This structure emerges from a developer's actions when changing the system. In this paper, we describe how the structure of many tasks crosscuts system artifacts, and how by capturing that structure, we can make it as easy for developers to work on changes scattered across the system's structure as it is to work on changes that line up with the system's structure.},
-address = {Berlin, Heidelberg},
 author = {Murphy, Gail C. and Kersten, Mik and Robillard, Martin P. and \v{C}ubrani\'{c}, Davor},
 booktitle = {ECOOP '05},
 doi = {10.1007/11531142},
@@ -159,6 +158,22 @@ title = {{How we refactor, and how we know it}},
 volume = {38},
 year = {2012}
 }
+
+@inproceedings{Kersten2006,
+abstract = {When working on a large software system, a programmer typically spends an inordinate amount of time sifting through thousands of artifacts to find just the subset of information needed to complete an assigned task. All too often, before completing the task the programmer must switch to working on a different task. These task switches waste time as the programmer must repeatedly find and identify the information relevant to the task-at-hand. In this paper, we present a mechanism that captures, models, and persists the elements and relations relevant to a task. We show how our task context model reduces information overload and focuses a programmer's work by filtering and ranking the information presented by the development environment. A task context is created by monitoring a programmer's activity and extracting the structural relationships of program artifacts. Operations on task contexts integrate with development environment features, such as structure display, search, and change management. We have validated our approach with a longitudinal field study of Mylar, our implementation of task context for the Eclipse development environment. We report a statistically significant improvement in the productivity of 16 industry programmers who voluntarily used Mylar for their daily work.},
+author = {Kersten, Mik and Murphy, Gail C.},
+booktitle = {FSE '06},
+doi = {10.1145/1181775.1181777},
+file = {:D$\backslash$:/Mendeley Desktop/p1-kersten.pdf:pdf},
+isbn = {1595934685},
+keywords = {IDE,bariknier15,degree-of-interest,interaction history,program views,task management},
+mendeley-tags = {bariknier15},
+month = nov,
+pages = {1--11},
+title = {Using task context to improve programmer productivity},
+year = {2006}
+}
+
 
 @incollection{Negara2012,
 abstract = {Researchers use file-based Version Control System (VCS) as the primary source of code evolution data. VCSs are widely used by developers, thus, researchers get easy access to historical data of many projects. Although it is convenient, research based on VCS data is incomplete and imprecise. Moreover, answering questions that correlate code changes with other activities (e.g., test runs, refactoring) is impossible. Our tool, CodingTracker, non-intrusively records fine-grained and diverse data during code development. CodingTracker collected data from 24 developers: 1,652 hours of development, 23,002 committed files, and 314,085 testcase runs. This allows us to answer: How much code evolution data is not stored in VCS? How much do developers intersperse refactorings and edits in the same commit? How frequently do developers fix failing tests by changing the test itself? How many changes are committed to VCS without being tested? What is the temporal and spacial locality of changes?},
