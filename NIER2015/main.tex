@@ -204,7 +204,7 @@ In existing version control tools, Anthony would not be able to easily transfer 
 line-based patches do not understand the semantics of the code and fails to apply the patch.
 He would not be able to transfer the refactoring commits (Figure \ref{fig:eclipse}C) and the bugfix either because the branch is in a strict ``bugfixes only'' cycle which does not allow non-essential changes such as refactorings.
 Decoupling this relatively simply refactoring change from the bugfix is unexpectedly nontrivial.
-One recommended ``low-tech'' way to do this would be ``save your all your edits, then re-introduce them in logical chunks, committing as you go''~\cite{GitBestPractices}.
+One recommended ``low-tech'' way to do this would be to ``save all your edits, then re-introduce them in logical chunks, committing as you go''~\cite{GitBestPractices}.
 More sophisticated approaches exist, but they are even more burdensome and error-prone because they rely on complex and non-obvious data structure-level manipulations~\cite{SausageMaking}.
 Worst of all, in either approach, he would have to abandon his current working set to perform the transformation because existing tools only allow one working set at a time.
 
