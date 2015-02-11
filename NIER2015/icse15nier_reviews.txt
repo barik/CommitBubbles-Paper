@@ -1,0 +1,169 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: tbarik@ncsu.edu
+Received: by 10.140.91.201 with SMTP id z67csp286130qgd;
+        Mon, 19 Jan 2015 09:41:49 -0800 (PST)
+X-Received: by 10.69.26.130 with SMTP id iy2mr46820731pbd.93.1421689308836;
+        Mon, 19 Jan 2015 09:41:48 -0800 (PST)
+Return-Path: <icse15nier@easychair.org>
+Received: from psmtp.com (na3sys009amx243.postini.com. [74.125.149.127])
+        by mx.google.com with SMTPS id yi10si1255745pac.211.2015.01.19.09.41.47
+        for <tbarik@ncsu.edu>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Mon, 19 Jan 2015 09:41:48 -0800 (PST)
+Received-SPF: none (google.com: icse15nier@easychair.org does not designate permitted sender hosts) client-ip=213.136.76.235;
+Authentication-Results: mx.google.com;
+       spf=none (google.com: icse15nier@easychair.org does not designate permitted sender hosts) smtp.mail=icse15nier@easychair.org
+Received: from easychair.org ([213.136.76.235]) (using TLSv1) by na3sys009amx243.postini.com ([74.125.148.10]) with SMTP;
+  Mon, 19 Jan 2015 17:41:48 GMT
+Received: from localhost.localdomain (m2635.contabo.net [213.136.76.235])
+  by easychair.org (8.14.4/8.14.4/Debian-4.1ubuntu1) with ESMTP id t0JHfiWg002478
+  for <tbarik@ncsu.edu>; Mon, 19 Jan 2015 18:41:44 +0100
+Message-Id: <201501191741.t0JHfiWg002478@easychair.org>
+Content-Disposition: inline
+Content-Transfer-Encoding: binary
+Content-Type: text/plain; charset="UTF-8"
+MIME-Version: 1.0
+X-Mailer: MIME::Lite 3.030 (F2.84; A2.13; B3.14; Q3.13)
+Date: Mon, 19 Jan 2015 18:41:44 +0100
+From: ICSE15-NIER <icse15nier@easychair.org>
+To: Titus Barik <tbarik@ncsu.edu>
+Subject: ICSE15-NIER reviews for paper 36
+X-pstn-mail-from: <icse15nier@easychair.org>
+X-pstn-dkim: 0 //M [no valid signature]
+X-pstn-nxpr: disp=neutral, envrcpt=tbarik@ncsu.edu
+X-pstn-nxp: bodyHash=335afd8b1e9ed365133bbe970ae149e1f4466152, headerHash=ebad328fb2e4524e0a4e4ceb85a4cc9921579937, keyName=4, rcptHash=125c301fb60652d3e96318ee91ee50a2a1bd039e, sourceip=213.136.76.235, version=1
+
+Dear Titus Barik,
+
+Reviews for your paper, attached.
+
+Tim Menzies
+
+
+----------------------- REVIEW 1 ---------------------
+PAPER: 36
+TITLE: Commit Bubbles
+AUTHORS: Titus Barik, Kevin Lubick and Emerson Murphy-Hill
+
+OVERALL EVALUATION: 1 (weak accept)
+Value (the problem is worth exploring):: 5 (excellent)
+Impact (the potential for disruption of current practice):: 4 (good)
+Originality (of the paper's insight):: 4 (good)
+Synergy (the paper appropriately connects a set of things that were previously treated separately):: 3 (fair)
+Validity (soundness of the rationale):: 3 (fair)
+Scholarship (appropriate consideration of relevant literature):: 4 (good)
+Quality  (overall paper quality):: 4 (good)
+Surprise (startling and unexpected findings):: 3 (fair)
+
+----------- REVIEW -----------
+The paper presents a new concept, Commit Bubbles, that can allow developers to construct commit histories that adhere to version control best practices in a way that integrates with their as-needed coding workflows.
+
+Treating history revision as a routine, rather than exceptional process, and minimizing context switching, which is the rational behind Commit Bubbles, is an interesting and fairly innovative vision. 
+
+However, at this stage the vision presented in this paper seems narrow, and it's not clear how to implement it -- although the authors discuss briefly some technical issues for its implementation. 
+
+In the motivation example and description of your prototype, Section 2, it's not clear how your tool interprets manual clean up and "Simultaneously, generates three new commit bubbles to reflect these actions".
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 36
+TITLE: Commit Bubbles
+AUTHORS: Titus Barik, Kevin Lubick and Emerson Murphy-Hill
+
+OVERALL EVALUATION: 1 (weak accept)
+Value (the problem is worth exploring):: 5 (excellent)
+Impact (the potential for disruption of current practice):: 5 (excellent)
+Originality (of the paper's insight):: 4 (good)
+Synergy (the paper appropriately connects a set of things that were previously treated separately):: 5 (excellent)
+Validity (soundness of the rationale):: 4 (good)
+Scholarship (appropriate consideration of relevant literature):: 4 (good)
+Quality  (overall paper quality):: 4 (good)
+Surprise (startling and unexpected findings):: 5 (excellent)
+
+----------- REVIEW -----------
+The authors propose to extend Reiss et al.'s idea of code bubbles to model
+code revisions, by allowing related historical versions to be annotated as
+makes the most sense to the developer.  They discuss the problems with
+current approaches, and sketch a way forward using existing ideas form
+related research.  They give an example use of the ideas, to illustrate
+what they mean.  They discuss some technical concerns, and related work.
+
+The work is simple and appealing.  It feels very much in the spirit of the
+"visions of the future" metaphor for NIER.  There is not a lot of technical
+detail here, but I think that's fine.  Instead, they present a small
+example use of it which demonstrates the key ideas.  To me, this is exactly
+the kind of paper we should be looking for in NIER, rather than a super
+squashed down 10 page paper full of p-values etc.  That said, the authors
+could perhaps have sketched out more details / proposed features of their
+approach.
+
+You might simply want to invoke the dichotomy of "tools should faithfully
+support how I work" versus "I want to understand what happened to the
+system from a design perspective, not a historical perspective".  Both are
+"correct", you just need to find how to map one to the other with limited
+overhead to the developers.
+
+You must read (and probably cite) Parnas' old paper: "The Rational Design
+Process: How and Why to Fake it".  It goes to the heart of what you are
+doing, tho it is not about version control per se.
+
+Abstract: "When working with version control systems, developers are
+expected to produce systematic commit histories that show well-defined
+steps with logical forward progress."
+
+So, um, who exactly expects this?  I can't believe anyone who who has ever
+written code in the real world would say such a thing.  More honoured in
+the breach than in the observance.
+
+Small remarks
+-------------
+
+"Finally, we are particularly encouraged by the impressive work of Hayashi
+and colleagues"
+
+Don't editorialize or tell the reader what to think.  Say something like,
+"Finally, Hayashi et al. [have done XXX]."
+
+"straight forward" -> "straightforward"
+
+"even though" is slang; prefer "although"
+
+"e.g.," and "i.e.," should have commas.
+
+Replace "and colleagues" with "et al."  it's shorter and also standard
+academic jargon for exactly what you mean!
+
+Can you please put in hyperlinks for your in-narrative references to the
+References section at the end.  pdflatex can do this for you.
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 36
+TITLE: Commit Bubbles
+AUTHORS: Titus Barik, Kevin Lubick and Emerson Murphy-Hill
+
+OVERALL EVALUATION: 2 (strong accept)
+Value (the problem is worth exploring):: 5 (excellent)
+Impact (the potential for disruption of current practice):: 4 (good)
+Originality (of the paper's insight):: 4 (good)
+Synergy (the paper appropriately connects a set of things that were previously treated separately):: 5 (excellent)
+Validity (soundness of the rationale):: 4 (good)
+Scholarship (appropriate consideration of relevant literature):: 4 (good)
+Quality  (overall paper quality):: 4 (good)
+Surprise (startling and unexpected findings):: 4 (good)
+
+----------- REVIEW -----------
+The paper presents Commit Bubbles, an approach to construct systematic commit histories based on code fragments represented as Code Bubbles. The authors demonstrate their approach with a mockup and an example usage scenario in which a new feature is added to the Eclipse JDT 4.0 branch. Commit Bubbles are generated automatically while editing the code. They then can be combined to larger commits and even integrated into other branches allowing developers to work with multiple working sets at a time. An informal pilot study with five participants showed first feedback that motivates the approach.
+
+I like the idea of Commit Bubbles since it provides developers with an approach to systematically construct commit histories that have the potential to facilitate comprehension, reviewing, merging, and testing of code changes. It is time to step away from recording changes only on a text-line basis and to provide better support for comprehending changes than traditional textual diffs.
+
+The authors mention that the fundamental problem lies in the incompatibility between the as-needed and systematic development strategies. While I agree with this, I was also wandering whether this incompatibility could be mitigated by providing better support for task-driven development, such as done by Mylyn? Could a combination of task-driven development and Code Bubbles lead to even better support? Something the researchers might look into.
+
+In Section II, the term "code fragment" or "fragment" is used to explain the approach. A brief explanation what a code fragment is should be added.
+
+The idea of providing support to work with various working sets and drag&drop of changes is interesting and doable, given the recently developed techniques to record code changes within the IDE, such as presented by Negara et al. Still, it needs to be evaluated how accurat the merging can be done and how much effort is left for the user. 
+
+Minor:
+* Figure 3 is difficult to read - enlarging it a bit would help
+* p3,col1: "save all your edits ...
+
