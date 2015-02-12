@@ -96,7 +96,9 @@ The fundamental problem is the as-needed strategy developers frequently use to w
 the systematic strategy that developers would need to use in order to generate their published commit histories. 
 As evidence, Murphy-Hill and colleagues found that refactoring operations are performed frequently, and that programmers 
 frequently interleave refactoring with other types of programming activity~\cite{Murphy-Hill2012c}. 
-Similarly, Negara and colleagues found that 46\% of refactored program entities are interspersed with other changes, and that 40\% of test fixes involve changes to the tests themselves~\cite{Negara2012}. 
+%
+Similarly, Negara and colleagues found that 46\% of refactored program entities are interspersed with other changes~\cite{Negara2012}, and Kusunoki and colleagues found that 20\%-60\% of commits intersperse peripheral changes, such as code formatting~\cite{Kusunoki2013}.
+% 
 In version control histories, these as-needed edits manifest themselves as \emph{tangled} commits, that is, commits that contain two or more logical units of changes~\cite{Kirinuki2014}, and as incomplete or incorrect commit messages, which fail to capture the full description of the change~\cite{Buse2010,Murphy-Hill2012c}. 
 Both of these issues are obstacles to supporting downstream change management tasks, such as merging commits between branches, and conducting effective code reviews~\cite{Kirinuki2014}.
 
@@ -256,7 +258,7 @@ It is also possible that developers do not find the unification of these activit
 Relatedly, a we must also consider if as-needed version control approaches can be complemented with other task-driven approaches, such as Mylyn~\cite{Kersten2006}.
 %
 In addition, we have not yet addressed the problem of ``bubble'' overload, in which multiple bubbles for different tasks present themselves to the developer simultaneously, resulting in task contexts unmanageable for the developer.
-A possible avenue for addressing these issues may be recommendation systems, which appropriately reveal and dismiss information or tools as needed to support a particular task~\cite{Robillard2010a,Murphy2005}.
+A possible avenue for addressing these issues may be recommendation systems, which appropriately reveal and dismiss information or tools as needed to support a particular task~\cite{Murphy2005}.
 % Further user studies are needed to validate the extent to which our approach
 % can generalize across other software development activities.
 
