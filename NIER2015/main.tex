@@ -211,7 +211,7 @@ He would not be able to transfer the refactoring commits (Figure \ref{fig:eclips
 Decoupling this relatively simply refactoring change from the bugfix is unexpectedly nontrivial.
 One recommended ``low-tech'' way to do this would be to ``save all your edits, then re-introduce them in logical chunks, committing as you go''~\cite{GitBestPractices}.
 More sophisticated approaches exist, but they are even more burdensome and error-prone because they rely on complex and non-obvious data structure-level manipulations~\cite{SausageMaking}.
-Worst of all, in either approach, he would have to abandon his current working set to perform the transformation because existing tools only allow one working set at a time.
+Worst of all, in either approach, Anthony would have to abandon his current working set to perform the transformation because existing tools only allow one working set at a time.
 
 This interruption would have several consequences.
 Anthony might forget details of his original task, for example, that \texttt{shouldIgnoreOptionalProblems} is in a broken state.
@@ -242,7 +242,7 @@ We used this preliminary feedback as an inspiration for our vision.
 \label{sec:challenges}
 We articulate technical and usability challenges that we face in realizing our vision, and while doing so, reference related work that makes progress towards these areas.  
 
-\textbf{Technical challenges.} Two technical challenges of note require techniques that can automatically generate commits in real time and more robustly rearrange commit history.
+\textbf{Technical challenges.} Two technical challenges require techniques that can automatically generate commits in real time and more robustly rearrange commit history.
 Generating commits is straightforward when the developer explicitly uses a tool, but research has shown that many developers perform operations manually, even when an automatic tool is available~\cite{Murphy-Hill2012c}.
 Towards these efforts, Negara and colleagues have proposed AST-based (rather than text-based) approaches to capturing edit sequences at an appropriate level of abstraction~\cite{Negara2012}. Similarly, Kirinuki and colleagues uses past commits to determine if a proposed commit may include a tangled change~\cite{Kirinuki2014}. 
 Buse and colleagues offer an automatic technique for synthesizing human-readable documentation for arbitrary program differences~\cite{Buse2010}.
@@ -317,7 +317,7 @@ Our work demonstrates the potential of tools that adapt to developers' familiar 
 
 This material is based upon work supported by the National Science Foundation under Grant No. 1217700. 
 %
-We thank Steven P. Reiss at Brown University for introducing us to Code Bubbles.
+We thank Steven P. Reiss for introducing us to Code Bubbles.
 
 % I did this all by myself.
 
