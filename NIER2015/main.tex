@@ -238,11 +238,12 @@ Moreover, we found that participants verbally described operations in terms of c
 In contrast, when developers were first given the desired commit history (e.g. systematic strategy) and then instructed to make the necessary code changes, they were able to both write the code and create the history. 
 We used this preliminary feedback as an inspiration for our vision.
 
+
 \section{Challenges}
 \label{sec:challenges}
 We articulate technical and usability challenges that we face in realizing our vision, and while doing so, reference related work that makes progress towards these areas.  
 
-\textbf{Technical challenges.} Two technical challenges of note require techniques that can automatically generate commits in real time and more robustly rearange commit history.
+\textbf{Technical challenges.} Two technical challenges of note require techniques that can automatically generate commits in real time and more robustly rearrange commit history.
 Generating commits is straightforward when the developer explicitly uses a tool, but research has shown that many developers perform operations manually, even when an automatic tool is available~\cite{Murphy-Hill2012c}.
 Towards these efforts, Negara and colleagues have proposed AST-based (rather than text-based) approaches to capturing edit sequences at an appropriate level of abstraction~\cite{Negara2012}. Similarly, Kirinuki and colleagues uses past commits to determine if a proposed commit may include a tangled change~\cite{Kirinuki2014}. 
 Buse and colleagues offer an automatic technique for synthesizing human-readable documentation for arbitrary program differences~\cite{Buse2010}.
