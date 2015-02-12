@@ -103,10 +103,9 @@ In version control histories, these as-needed edits manifest themselves as \emph
 Both of these issues are obstacles to supporting downstream change management tasks, such as merging commits between branches, and conducting effective code reviews~\cite{Kirinuki2014}.
 
 \purpose{History revision gets out of this conflict} 
-Parnas and Clements propose that although real software is rarely developed systematically, it should be possible to make it appear that software was designed by such a process~\cite{Parnas1986}. In version control, for instance, one mechanism for accomplishing this is to untangle commit histories into systematic histories using history revision operations offered by version control systems.\footnote{Robertson calls this ``sausage making'' -- ``The process of developing software, 
+Parnas and Clements propose that although real software is rarely developed systematically, it should be possible to make it appear that software was designed by such a process~\cite{Parnas1986}. In version control, for instance, one mechanism for accomplishing this is to untangle commit histories into systematic histories using history revision operations offered by version control systems.\footnote{Robertson calls this ``sausage making'' --- ``The process of developing software, 
 similar to the process of making sausage, is a messy messy business $[\ldots]$ If you hide the sausage making, 
-you can create a beautiful looking history where each step looks as delicious as the end-product.'' 
-\cite{SausageMaking}}
+you can create a beautiful looking history where each step looks as delicious as the end-product''~\cite{SausageMaking}.} 
 For example, a developer can theoretically reorder or delete commits using \textit{rebase}.
 However, in practice, this procedure is difficult to perform correctly~\cite{SausageMaking}.
 
