@@ -1,3 +1,40 @@
+@article{Parnas1986,
+abstract = {Many have sought a software design process that allows a program to be derived systematically from a precise statement of requirements. It is proposed that, although designing a real product in that way will not be successful, it is possible to produce documentation that makes it appear that the software was designed by such a process. The ideal process and the documentation that it requires are described. The authors explain why one should attempt to design according to the ideal process and why one should produce the documentation that would have been produced by that process. The contents of each of the required documents are outlined.},
+author = {Parnas, David Lorge and Clements, Paul C.},
+doi = {10.1109/TSE.1986.6312940},
+file = {:D$\backslash$:/Mendeley Desktop/06312940.pdf:pdf},
+issn = {0098-5589},
+journal = {IEEE Transactions on Software Engineering},
+keywords = {Computers,Data structures,Documentation,Maintenance engineering,Mathematical model,Programming methods,Software design,bariknier15,documentation,rational design process,software design,software documentation,software engineering,statement of requirements,system documentation},
+mendeley-tags = {bariknier15},
+month = feb,
+number = {2},
+pages = {251--257},
+shorttitle = {Software Engineering, IEEE Transactions on},
+title = {{A rational design process: How and why to fake it}},
+volume = {SE-12},
+year = {1986}
+}
+
+@inproceedings{Kusunoki2013,
+abstract = {In the last decade, a variety of studies on mining software repositories has been conducted. Mining repositories has a potential to obtain useful knowledge for the future development and maintenance. When software repositories are mined, large commits in them are often excluded from mining targets because large commits include merging and we believe that large commits include peripheral modifications, which may affect negative impacts on mining code repositories. However, if large commits include code modifications, excluding large commits loses such modifications unintentionally. Moreover, such data cleansing assumes that there are no peripheral modifications in small commits. In this paper, we investigate how much peripheral modifications are included in commits in code repositories. As a result, we found that excluding large commits is insufficient to remove hindrances in commits for mining code repositories.},
+author = {Kusunoki, Noa and Hotta, Keisuke and Higo, Yoshiki and Kusumoto, Shinji},
+booktitle = {2013 20th Asia-Pacific Software Engineering Conference (APSEC)},
+doi = {10.1109/APSEC.2013.106},
+file = {:D$\backslash$:/Mendeley Desktop/06754345.pdf:pdf},
+isbn = {978-1-4799-2144-7},
+issn = {1530-1362},
+keywords = {Data mining,Educational institutions,Large commit,Maintenance engineering,Merging,Mining software repositories,Software,Software engineering,Source code analysis,White spaces,bariknier15,code modifications,code repositories,data mining,peripheral modifications,software development,software maintenance,software repositories mining},
+language = {English},
+mendeley-tags = {bariknier15},
+month = dec,
+pages = {19--24},
+title = {How Much Do Code Repositories Include Peripheral Modifications?},
+volume = {2},
+year = {2013}
+}
+
+
 @inproceedings{PerezDeRosso2013,
 	abstract = {It is commonly asserted that the success of a software development project, and the usability of the final product, depend on the quality of the concepts that underlie its design. Yet this hypothesis has not been systematically explored by researchers, and conceptual design has not played the central role in the research and teaching of software engineering that one might expect. As part of a new research project to explore conceptual design, we are engaging in a series of case studies. This paper reports on the early stages of our first study, on the Git version control system. Despite its widespread adoption, Git puzzles even experienced developers and is not regarded as easy to use. In an attempt to understand the root causes of its complexity, we analyze its conceptual model and identify some undesirable properties; we then propose a reworking of the conceptual model that forms the basis of (the first version of) Gitless, an ongoing effort to redesign Git and experiment with the effects of conceptual simplifications.},
 	author = {{Perez De Rosso}, Santiago and Jackson, Daniel},
@@ -9,7 +46,7 @@
 	month = oct,
 	pages = {37--52},
 	tags = {bariknier15,git,onward,onward13,software engineering},
-	title = {{What's wrong with git?}},	
+	title = {{What's wrong with Git?}},	
 	year = 2013
 }
 
@@ -50,20 +87,16 @@ year = {2000}
 
 @inproceedings{Murphy2005,
 abstract = {Integrated development environments have been designed and engineered to display structural information about the source code of large systems. When a development task lines up with the structure of the system, the tools in these environments do a great job of supporting developers in their work. Unfortunately, many development tasks do not have this characteristic. Instead, they involve changes that are scattered across the source code and various other kinds of artifacts, including bug reports and documentation. Today's development environments provide little support for working with scattered pieces of a system, and as a result, are not adequately supporting the ways in which developers work on the system. Fortunately, many development tasks do have a structure. This structure emerges from a developer's actions when changing the system. In this paper, we describe how the structure of many tasks crosscuts system artifacts, and how by capturing that structure, we can make it as easy for developers to work on changes scattered across the system's structure as it is to work on changes that line up with the system's structure.},
-address = {Berlin, Heidelberg},
 author = {Murphy, Gail C. and Kersten, Mik and Robillard, Martin P. and \v{C}ubrani\'{c}, Davor},
 booktitle = {ECOOP '05},
 doi = {10.1007/11531142},
-editor = {Black, Andrew P.},
 file = {:D$\backslash$:/Mendeley Desktop/chp\%3A10.1007\%2F11531142\_2.pdf:pdf},
 isbn = {978-3-540-27992-1},
 keywords = {bariknier15,version control},
 mendeley-tags = {bariknier15,version control},
 month = jul,
 pages = {33--48},
-publisher = {Springer Berlin Heidelberg},
 title = {{The emergent structure of development tasks}},
-volume = {3586},
 year = {2005}
 }
 
@@ -163,20 +196,34 @@ volume = {38},
 year = {2012}
 }
 
+@inproceedings{Kersten2006,
+abstract = {When working on a large software system, a programmer typically spends an inordinate amount of time sifting through thousands of artifacts to find just the subset of information needed to complete an assigned task. All too often, before completing the task the programmer must switch to working on a different task. These task switches waste time as the programmer must repeatedly find and identify the information relevant to the task-at-hand. In this paper, we present a mechanism that captures, models, and persists the elements and relations relevant to a task. We show how our task context model reduces information overload and focuses a programmer's work by filtering and ranking the information presented by the development environment. A task context is created by monitoring a programmer's activity and extracting the structural relationships of program artifacts. Operations on task contexts integrate with development environment features, such as structure display, search, and change management. We have validated our approach with a longitudinal field study of Mylar, our implementation of task context for the Eclipse development environment. We report a statistically significant improvement in the productivity of 16 industry programmers who voluntarily used Mylar for their daily work.},
+author = {Kersten, Mik and Murphy, Gail C.},
+booktitle = {FSE '06},
+doi = {10.1145/1181775.1181777},
+file = {:D$\backslash$:/Mendeley Desktop/p1-kersten.pdf:pdf},
+isbn = {1595934685},
+keywords = {IDE,bariknier15,degree-of-interest,interaction history,program views,task management},
+mendeley-tags = {bariknier15},
+month = nov,
+pages = {1--11},
+title = {Using task context to improve programmer productivity},
+year = {2006}
+}
+
+
 @incollection{Negara2012,
 abstract = {Researchers use file-based Version Control System (VCS) as the primary source of code evolution data. VCSs are widely used by developers, thus, researchers get easy access to historical data of many projects. Although it is convenient, research based on VCS data is incomplete and imprecise. Moreover, answering questions that correlate code changes with other activities (e.g., test runs, refactoring) is impossible. Our tool, CodingTracker, non-intrusively records fine-grained and diverse data during code development. CodingTracker collected data from 24 developers: 1,652 hours of development, 23,002 committed files, and 314,085 testcase runs. This allows us to answer: How much code evolution data is not stored in VCS? How much do developers intersperse refactorings and edits in the same commit? How frequently do developers fix failing tests by changing the test itself? How many changes are committed to VCS without being tested? What is the temporal and spacial locality of changes?},
 author = {Negara, Stas and Vakilian, Mohsen and Chen, Nicholas and Johnson, RalphE. and Dig, Danny},
-booktitle = {ECOOP 2012},
+booktitle = {ECOOP '12},
 doi = {10.1007/978-3-642-31057-7\_5},
-editor = {Noble, James},
 file = {:D$\backslash$:/Mendeley Desktop/chp\%3A10.1007\%2F978-3-642-31057-7\_5.pdf:pdf},
 isbn = {978-3-642-31056-0},
 keywords = {bariknier15},
 language = {English},
 mendeley-tags = {bariknier15},
 pages = {79--103},
-publisher = {Springer Berlin Heidelberg},
-title = {{Is It Dangerous to Use Version Control Histories to Study Source Code Evolution?}},
+title = {{Is it dangerous to use version control histories to study source code evolution?}},
 volume = {7313},
 year = {2012}
 }
@@ -201,6 +248,7 @@ year = {2008}
 @book{Loeliger2012,
 author = {Loeliger, Jon and McCullough, Matthew},
 file = {:C$\backslash$:/Users/tbarik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Loeliger, McCullough - 2012 - Version Control with Git.pdf:pdf},
+edition = 2,
 isbn = {9781449316389},
 keywords = {book,git},
 mendeley-tags = {book,git},
@@ -250,17 +298,15 @@ abstract={At ICSE 2010, the Code Bubbles team from Brown University and the Code
 
 @inproceedings{DeLine2010a,
 abstract = {The user interfaces of today's development environments have a "bento box" design that partitions information into separate areas. This design makes it difficult to stay oriented in the open documents and to synthesize information shown in different areas. Code Canvas takes a new approach by providing an infinite zoomable surface for software development. A canvas both houses editable forms of all of a project's documents and allows multiple layers of visualization over those documents. By uniting the content of a project and information about it onto a single surface, Code Canvas is designed to leverage spatial memory to keep developers oriented and to make it easy to synthesize information.},
-address = {New York, New York, USA},
 author = {DeLine, Robert and Rowan, Kael},
-booktitle = {Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - ICSE '10},
+booktitle = {ICSE '10},
 doi = {10.1145/1810295.1810331},
 isbn = {9781605587196},
 keywords = {code bubbles,code canvas,software engineering},
 mendeley-tags = {code bubbles,code canvas,software engineering},
-month = {may},
-pages = {207},
-publisher = {ACM Press},
-title = {Code canvas: zooming towards better development environments},
+month = may,
+pages = {207--210},
+title = {{Code Canvas}: Zooming towards better development environments},
 volume = {2},
 year = {2010}
 }
@@ -297,7 +343,6 @@ year = {1987}
 
 @inproceedings{Kirinuki2014,
 abstract = {Although there is a principle that states a commit should only include changes for a single task, it is not always respected by developers. This means that code repositories often include commits that contain tangled changes. The presence of such tangled changes hinders analyzing code repositories because most mining software repository (MSR) approaches are designed with the assumption that every commit includes only changes for a single task. In this paper, we propose a technique to inform developers that they are in the process of committing tangled changes. The proposed technique utilizes the changes included in the past commits to judge whether a given commit includes tangled changes. If it determines that the proposed commit may include tangled changes, it offers suggestions on how the tangled changes can be split into a set of untangled changes.},
-address = {New York, New York, USA},
 author = {Kirinuki, Hiroyuki and Higo, Yoshiki and Hotta, Keisuke and Kusumoto, Shinji},
 booktitle = {ICPC '14},
 doi = {10.1145/2597008.2597798},
@@ -307,7 +352,6 @@ keywords = {Mining software repositories,Tangled changes,Understanding commits,b
 mendeley-tags = {bariknier15,icpc,icpc2014},
 month = jun,
 pages = {262--265},
-publisher = {ACM Press},
 title = {{Hey! Are you committing tangled changes?}},
 year = {2014}
 }
@@ -329,7 +373,7 @@ year = {2008}
 @inproceedings{Parnin2012,
 abstract = {Despite its vast capacity and associative powers, the human brain does not deal well with interruptions. Particularly in situations where information density is high, such as during a programming task, recovering from an interruption requires extensive time and effort. Although modern program development environments have begun to recognize this problem, none of these tools take into account the brain's structure and limitations. In this paper, we present a conceptual framework for understanding the strengths and weaknesses of human memory, particularly with respect to it ability to deal with work interruptions. The framework explains empirical results obtained from experiments in which programmers were interrupted while working. Based on the framework, we discuss programmer information needs that development tools must satisfy and suggest several memory aids such tools could provide. We also describe our prototype implementation of these memory aids.},
 author = {Parnin, Chris and Rugaber, Spencer},
-booktitle = {ICPC 2012},
+booktitle = {ICPC '12},
 doi = {10.1109/ICPC.2012.6240479},
 file = {:D$\backslash$:/Mendeley Desktop/06240479.pdf:pdf},
 isbn = {978-1-4673-1216-5},
@@ -338,7 +382,6 @@ keywords = {Associative memory,Hippocampus,Humans,Memory management,Monitoring,N
 mendeley-tags = {bariknier15,icpc},
 month = jun,
 pages = {123--132},
-publisher = {IEEE},
 shorttitle = {Program Comprehension (ICPC), 2012 IEEE 20th Inter},
 title = {{Programmer information needs after memory failure}},
 year = {2012}
@@ -355,7 +398,7 @@ isbn = {9781450301169},
 keywords = {bariknier15,code summarization,commit messages,differencing},
 mendeley-tags = {bariknier15},
 month = sep,
-pages = {33},
+pages = {33--42},
 title = {{Automatically documenting program changes}},
 year = {2010}
 }
@@ -373,7 +416,7 @@ month = sep,
 number = {2},
 pages = {179--203},
 publisher = {L. Erlbaum Associates Inc.},
-title = {{The Intellectual Challenge of CSCW: The Gap Between Social Requirements and Technical Feasibility}},
+title = {The Intellectual Challenge of {CSCW}: The Gap Between Social Requirements and Technical Feasibility},
 volume = {15},
 year = {2000}
 }
@@ -388,8 +431,8 @@ isbn = {9781605589299},
 keywords = {bariknier15,bubbles,java,multi-view,simultaneous views,source code},
 mendeley-tags = {bariknier15},
 month = apr,
-pages = {2503},
-title = {{Code Bubbles: A Working set-based interface for code understanding and maintenance}},
+pages = {2503--2512},
+title = {{Code Bubbles: A working set-based interface for code understanding and maintenance}},
 year = {2010}
 }
 
@@ -405,7 +448,7 @@ month = jul,
 number = {4},
 pages = {80--86},
 shorttitle = {Software, IEEE},
-title = {{Recommendation Systems for Software Engineering}},
+title = {Recommendation Systems for Software Engineering},
 volume = {27},
 year = {2010}
 }
@@ -413,7 +456,7 @@ year = {2010}
 @ONLINE{GitBestPractices,
 author = {Ernst,Michael},
 title = {Version control concepts and best practices},
-month = {July},
+month = jul,
 year = {2014},
 url = {http://homes.cs.washington.edu/~mernst/advice/version-control.html}
 }
@@ -421,15 +464,14 @@ url = {http://homes.cs.washington.edu/~mernst/advice/version-control.html}
 @ONLINE{SausageMaking,
 author = {Robertson, Seth},
 title = {Commit Often, Perfect Later, Publish Once: Git Best Practices},
-month = {Feb},
+month = feb,
 year = {2012},
 url = {http://sethrobertson.github.io/GitBestPractices/}
 }
 
 @inproceedings{Henley2014,
-address = {New York, New York, USA},
 author = {Henley, Austin Z. and Fleming, Scott D.},
-booktitle = {Proceedings of the 32nd annual ACM conference on Human factors in computing systems - CHI '14},
+booktitle = {CHI '14},
 file = {:C$\backslash$:/Users/tbarik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Henley, Fleming - 2014 - The patchworks code editor.pdf:pdf},
 keywords = {chi,code editor,integrated development environment (ide),navigation,patchworks,user study},
 mendeley-tags = {chi,patchworks},
@@ -441,7 +483,7 @@ year = {2014}
 
 @inproceedings{Coblenz2006,
 author = {Coblenz, Michael J. and Ko, Andrew J. and Myers, Brad A.},
-booktitle = {Proceedings of the 2006 OOPSLA workshop on eclipse technology eXchange - eclipse '06},
+booktitle = {OOPSLA Workshop: Eclipse '06},
 file = {:C$\backslash$:/Users/tbarik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Coblenz, Ko, Myers - 2006 - JASPER.pdf:pdf},
 isbn = {1595936211},
 keywords = {Eclipse,bariknier15,concerns,natural programming,programmer efficiency,programming environments},
@@ -465,8 +507,7 @@ month = dec,
 number = {12},
 pages = {971--987},
 shorttitle = {Software Engineering, IEEE Transactions on},
-title = {{An Exploratory Study of How Developers Seek, Relate, and Collect Relevant Information during Software Maintenance Tasks}},
-url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4016573},
+title = {An Exploratory Study of How Developers Seek, Relate, and Collect Relevant Information during Software Maintenance Tasks},
 volume = {32},
 year = {2006}
 }
